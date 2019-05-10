@@ -1,3 +1,0 @@
-/home/fsalaverri/Escritorio/tp2-algo3/tp2algo3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/fsalaverri/Escritorio/tp2-algo3/tp2algo3/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/fsalaverri/Escritorio/tp2-algo3/tp2algo3/cmake-build-debug/CMakeFiles/tp3algo3.dir
