@@ -1,0 +1,3 @@
+/home/fsalaverri/CLionProjects/tp3algo3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/fsalaverri/CLionProjects/tp3algo3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/fsalaverri/CLionProjects/tp3algo3/cmake-build-debug/CMakeFiles/tp3algo3.dir
