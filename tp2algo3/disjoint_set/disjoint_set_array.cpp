@@ -4,27 +4,18 @@
 
 #include "disjoint_set_array.hpp"
 
-//union by rank and path compression
+
 
 int disjoint_set_array::find(int i)  const {
-    return p[i] == none ? i : (p[i] = find(p[i]));
+    return p[i];
 }
 
 void disjoint_set_array::unite(int i, int j) {
     i = find(i), j = find(j);
 
-    if(i != j) {
-
-        if (r[i] < r[j]){
-            p[i] = j;
-
-        }else{
-            if (r[i] > r[j]){
-                p[j] = i;
-            }else{
-                p[j] = i;
-                r[i]+=1;
-            }
+    for (int k = 0; k < p.size() ; ++k) {
+        if (p[k]==j){
+            p[k]=i;
         }
     }
 }

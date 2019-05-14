@@ -6,18 +6,24 @@
 #define TP3ALGO3_DISJOINT_SET_TREE_HPP
 
 
-class disjoint_set_tree {
+
+#include <vector>
+
+using namespace std;
+
+class disjoint_set_tree{
+    const int none = -1;
+    //p = parent, r = rank
+    mutable vector<int> p, r;
 
 public:
+    disjoint_set_tree(int n) {
+        p.assign(n, none); r.assign(n, 0);
+    };
 
-disjoint_set_array(int n) {
-    p.assign(n, none);
-    r.assign(n, 0);
+    int find(int i) const;
 
-}
-int find(int i);
-
-void unite(int i, int j);
+    void unite(int i, int j);
 };
 
 #endif //TP3ALGO3_DISJOINT_SET_TREE_HPP

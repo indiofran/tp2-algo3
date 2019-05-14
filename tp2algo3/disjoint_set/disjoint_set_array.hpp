@@ -10,13 +10,16 @@
 using namespace std;
 
 class disjoint_set_array {
-    const int none = -1;
-    //p = parent, r = rank
-    mutable vector<int> p, r;
+    //p = parent
+    mutable vector<int> p;
+
 
 public:
     disjoint_set_array(int n) {
-        p.assign(n, none); r.assign(n, 0);
+        for (int i = 0; i < n; ++i) {
+            p.push_back(i);
+        }
+
     };
 
     int find(int i) const;
