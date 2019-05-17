@@ -4,12 +4,14 @@
 
 #include "segmentation.h"
 
-vector<graph> segments_by_min_distance(graph& g)
+vector<graph> segments_by_min_distance(graph& g,int n)
 {
     graph a = kruskal(g);
     unsigned int m = a.size();
     sort(a.begin(), a.end());
-    disjoint_set_array segments = do_initial_segmentation(a);
+    //disjoint_set_array segments = do_initial_segmentation(a);
+    disjoint_set_array segments = disjoint_set_array(n);
+
     for (unsigned int i = 1; i < m; i++)
     {
         edge current = a[i];
@@ -21,6 +23,7 @@ vector<graph> segments_by_min_distance(graph& g)
         {
             float internal_diff_v = internal_diff(segments, v);
             float internal_diff_w = internal_diff(segments, w);
+
             if (diff < internal_diff_v && diff < internal_diff_w)
             {
                 segments.unite(v, w);

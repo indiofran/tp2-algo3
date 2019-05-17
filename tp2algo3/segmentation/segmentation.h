@@ -5,7 +5,7 @@
 #ifndef TP3ALGO3_SEGMENTATION_H
 #define TP3ALGO3_SEGMENTATION_H
 
-#include "../graph/graph.h"
+
 #include <algorithm>
 #include "../disjoint_set/disjoint_set_array.hpp"
 #include "../agm/kruskal.h"

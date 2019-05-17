@@ -13,8 +13,7 @@ using namespace std;
 
 typedef int node;
 
-struct edge
-{
+struct edge {
     node from;
     node to;
     float weight;
