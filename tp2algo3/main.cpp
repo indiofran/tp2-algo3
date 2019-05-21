@@ -25,6 +25,7 @@ int main() {
     vector<vector<int> > vertex ;
     int v=0;
 
+    //Armo las matrices de pixeles y numero de vertices
     for(int i = 0; i < h; ++i){
 
         vector<int> vacio;
@@ -42,7 +43,7 @@ int main() {
 
     //Gaussian Filter?
 
-    //Imagen a Grafo     CORREGIR ARISTAS REPETIDAS
+    //Imagen a Grafo
     G = image_to_graph(imagen,vertex,h,w);
 
     //Segmentacion del Grafo CORREGIR PARA ARBOLES Y REVISAR SI HACE FALTA KRUSKAL
