@@ -15,8 +15,8 @@ class disjoint_set_tree_pc {
 
     //p = parent, r = rank.
     mutable vector<int> p, r;
-    vector<int> size;
-    vector<int> Int;
+    vector<int> _size;
+    vector<int> _internal_difference;
 
 public:
     disjoint_set_tree_pc(int n) {
@@ -24,18 +24,20 @@ public:
         //Cada elemento en un conjunto distinto.
         //Rank empieza en cero.
 
-        p.assign(n, none); r.assign(n, 0);
+        p.assign(n, none); r.assign(n, 0);_size.assign(n,1);_internal_difference.assign(n,0);
     };
 
     int find(int i) const;
 
     void unite(int i, int j);
 
-    void actualizarInt(int i,int nuevoInt);
+    void update_internal_difference(int i,int nuevoInt);
 
-    int internal_diff(int c);
+    int internal_difference(int c);
 
-    int _size(int c);
+    int size(int c);
+
+    vector<int> segmentation();
 };
 
 

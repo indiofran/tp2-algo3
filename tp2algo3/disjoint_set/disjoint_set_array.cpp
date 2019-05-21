@@ -6,7 +6,7 @@
 
 
 
-int disjoint_set_array::find(int i)  const {
+int disjoint_set_array::find(int i) {
     return p[i];
 }
 
@@ -20,19 +20,22 @@ void disjoint_set_array::unite(int i, int j) {
             sizej++;
         }
     }
-    size[i]+=sizej;
+    _size[i]+=sizej;
 }
 
-void disjoint_set_array::actualizarInt(int i,int nuevoInt){
-   Int[i]=nuevoInt;
+//Le paso el padre sino no funciona
+void disjoint_set_array::update_internal_difference(int i, int nuevoInt){
+    _internal_difference[i]=nuevoInt;
 }
 
-int disjoint_set_array::internal_diff(int c){
-    return Int[c];
+//Le paso el padre sino no funciona
+int disjoint_set_array::internal_difference(int c){
+    return _internal_difference[c];
 }
 
-int disjoint_set_array::_size(int c){
-    return size[c];
+//Le paso el padre sino no funciona
+int disjoint_set_array::size(int c){
+    return _size[c];
 }
 
 vector<int> disjoint_set_array::segmentation(){

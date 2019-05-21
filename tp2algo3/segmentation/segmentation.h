@@ -8,13 +8,17 @@
 
 #include <algorithm>
 #include "../disjoint_set/disjoint_set_array.hpp"
+#include "../disjoint_set/disjoint_set_tree.hpp"
+#include "../disjoint_set/disjoint_set_tree_pc.hpp"
 #include "../agm/kruskal.h"
 
-vector<int> segments_by_min_distance(graph& g,int n,int k);
-vector<graph> segments_by_quantiles(graph& g);
+vector<int> segments_by_min_distance_array(graph& g,int n,int k);
+vector<int> segments_by_min_distance_tree(graph& g,int n,int k);
+vector<int> segments_by_min_distance_tree_pv(graph& g,int n,int k);
 
-disjoint_set_array do_initial_segmentation(graph& g); // poner cada nodo en una componente disinta
-float internal_diff(disjoint_set_array& ds, int e);
+
+
+
 
 
 #endif //TP3ALGO3_SEGMENTATION_H

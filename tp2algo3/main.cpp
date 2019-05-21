@@ -46,11 +46,11 @@ int main() {
     //Imagen a Grafo
     G = image_to_graph(imagen,vertex,h,w);
 
-    //Segmentacion del Grafo CORREGIR PARA ARBOLES Y REVISAR SI HACE FALTA KRUSKAL
+   
     int k;
-    vector<int> segments = segments_by_min_distance(G,n,k);
+    vector<int> segments = segments_by_min_distance_array(G,n,k);
 
-    //Convierto los segmentos en formato imagen   REVISAR
+    //Convierto los segmentos en formato imagen
     imagen = segments_to_image(segments,h,w);
 
     //Cout de la segmentacion
