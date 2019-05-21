@@ -10,7 +10,7 @@
 #include "../disjoint_set/disjoint_set_array.hpp"
 #include "../agm/kruskal.h"
 
-vector<graph> segments_by_min_distance(graph& g);
+vector<int> segments_by_min_distance(graph& g,int n,int k);
 vector<graph> segments_by_quantiles(graph& g);
 
 disjoint_set_array do_initial_segmentation(graph& g); // poner cada nodo en una componente disinta

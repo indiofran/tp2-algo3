@@ -15,6 +15,8 @@ class disjoint_set_tree{
     const int none = -1;
     //p = parent, r = rank
     mutable vector<int> p, r;
+    vector<int> size;
+    vector<int> Int;
 
 public:
     disjoint_set_tree(int n) {
@@ -24,6 +26,12 @@ public:
     int find(int i) const;
 
     void unite(int i, int j);
+
+    void actualizarInt(int i,int nuevoInt);
+
+    int internal_diff(int c);
+
+    int _size(int c);
 };
 
 #endif //TP3ALGO3_DISJOINT_SET_TREE_HPP

@@ -1,6 +1,7 @@
 #include <iostream>
-#include "graph/graph.h"
 #include "digraph/digraph.h"
+#include "segmentation/in_out_functions.h"
+#include "segmentation/segmentation.h"
 
 int main() {
 
@@ -13,93 +14,62 @@ int main() {
     //Lista de Aristas
     graph G;
 
+    //Cantidad de nodos
+    int n=h*w;
+
+
     //Imagen
     vector<vector<int> > imagen;
+
+    //Numeracion de los vertices
+    vector<vector<int> > vertex ;
+    int v=0;
+
+    for(int i = 0; i < h; ++i){
+
+        vector<int> vacio;
+        vertex.push_back(vacio);
+        imagen.push_back(vacio);
+
+        for(int j = 0; i < w; ++j){
+            int pixel;
+            cin >> pixel;
+            imagen[i].push_back(pixel);
+            vertex[i].push_back(v);
+            v++;
+        }
+    }
+
+    //Gaussian Filter?
+
+    //Imagen a Grafo     CORREGIR ARISTAS REPETIDAS
+    G = image_to_graph(imagen,vertex,h,w);
+
+    //Segmentacion del Grafo CORREGIR PARA ARBOLES Y REVISAR SI HACE FALTA KRUSKAL
+    int k;
+    vector<int> segments = segments_by_min_distance(G,n,k);
+
+    //Convierto los segmentos en formato imagen   REVISAR
+    imagen = segments_to_image(segments,h,w);
+
+    //Cout de la segmentacion
     for(int i = 0; i < h; ++i){
 
         for(int j = 0; i < w; ++j){
-            int pixel;                 //INT???
-            cin >> pixel;
-
-            imagen[i].push_back(pixel);
+            int pixel=imagen[i][j];
+            cout << pixel;
         }
+        cout<<endl;
     }
 
-    //Imagen a Grafo?
 
-    for (int i = 0; i < h; ++i) {
-        for (int j = 0; j < w ; ++j) {
-
-            //Esquina izq arriba
-            if(i==0==j){
-                edge a,b,c;
-                a.to=0;
-                b.to=0;
-                c.to=0;
-                a.from=1;
-                b.from=w;
-                c.from=w+1;
-                G.push_back(a);
-                G.push_back(b);
-                G.push_back(c);
-            }
-
-            //Esquina der abajo
-            if(i==h-1 and j==w-1){
-                edge a,b,c;
-                a.to=0;
-                b.to=0;
-                c.to=0;
-                a.from=1;
-                b.from=h;
-                c.from=h+1;
-                G.push_back(a);
-                G.push_back(b);
-                G.push_back(c);
-            }
-
-            //Esquina der arriba
-            if(i==0 and j==w-1){
-                edge a,b,c;
-                a.to=w-1;
-                b.to=w-1;
-                c.to=w-1;
-                a.from=w-2;
-                b.from=2*w -1;
-                c.from=2*w -2;
-                G.push_back(a);
-                G.push_back(b);
-                G.push_back(c);
-            }
-            //Esquina izq abajo
-            if(i==h-1 and j==0){
-                edge a,b,c;
-                a.to=0;
-                b.to=0;
-                c.to=0;
-                a.from=1;
-                b.from=h;
-                c.from=h+1;
-                G.push_back(a);
-                G.push_back(b);
-                G.push_back(c);
-            }
-
-            //Fila arriba
-
-            //Fila abajo
-
-            //Resto de los casos?
-
-        }
-    }
 
 
 
     //Ejercicio 2
 
-
-
+    //ARREGLAR
+/*
     //Cantidad de ciudades y rutas
     int n, m; cin >> n >> m;
 
@@ -122,4 +92,6 @@ int main() {
     }
 
     return 0;
+
+*/
 }

@@ -11,25 +11,25 @@
 
 using namespace std;
 
+//Toma una lista de aristas
+graph kruskal(graph g,int n) { //Por referencia??
 
-graph kruskal(graph &g,int n) {
-    //Toma una lista de aristas
-
+    //Arbol generador minimo
     graph T;
 
-    //Sort inicial                                        REVISAR LA FUNCION DE COMPARACION
+    //Sort inicial
     sort(g.begin(), g.end());
 
-    //Algoritmo de Kruskal;
+    //Creo disjoint set;
     disjoint_set_array ds(n);
 
-    for(int i = 0, j = 0; i < n-1; ++i) {
+    for(int i = 0,j=0;i < n-1; ++i) {
 
         while(ds.find(g[j].to) == ds.find(g[j].from)){
-            T.push_back(g[j]);                              //DUDA INDICE
-            ds.unite(g[j].to,g[j].from);
             ++j;
         }
+        T.push_back(g[j]);
+        ds.unite(g[j].to,g[j].from);
     }
 
     return T;

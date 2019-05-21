@@ -26,14 +26,29 @@ void disjoint_set_tree_pc::unite(int i, int j) {
 
         if (r[i] < r[j]){
             p[i] = j;
+            size[j]+=size[i];
 
         }else{
             if (r[i] > r[j]){
                 p[j] = i;
+                size[i]+=size[j];
             }else{
                 p[j] = i;
                 r[i]+=1;
+                size[i]+=size[j];
             }
         }
     }
+}
+
+void disjoint_set_tree_pc::actualizarInt(int i,int nuevoInt){
+    Int[i]=nuevoInt;
+}
+
+int disjoint_set_array::internal_diff(int c){
+    return Int[c];
+}
+
+int disjoint_set_array::_size(int c){
+    return size[c];
 }
