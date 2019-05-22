@@ -1,7 +1,10 @@
 #include <iostream>
 #include "digraph/digraph.h"
-#include "segmentation/in_out_functions.h"
 #include "segmentation/segmentation.h"
+#include <string>
+#include <fstream>
+#include <sstream>
+
 
 int main() {
 
@@ -9,7 +12,24 @@ int main() {
 
     //Ancho y alto de la imagen a procesar
 
-    int w, h; cin >> w >> h;
+    int w,h;
+    ifstream infile;
+    infile.open("testfile.in",std::ifstream::in);
+
+    if (!infile) {  cout << "Can't open file "<< endl;  exit(1); }
+
+    string inputLine ;
+
+    cin>>w;
+
+    cout << w << endl;
+
+    return 0;
+
+   /*
+
+    //int w, h;
+    //cin >> w >> h;
 
     //Lista de Aristas
     graph G;
@@ -65,7 +85,7 @@ int main() {
 
 
 
-
+*/
 
     //Ejercicio 2
 

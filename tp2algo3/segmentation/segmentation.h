@@ -6,11 +6,12 @@
 #define TP3ALGO3_SEGMENTATION_H
 
 
-#include <algorithm>
+
 #include "../disjoint_set/disjoint_set_array.hpp"
 #include "../disjoint_set/disjoint_set_tree.hpp"
 #include "../disjoint_set/disjoint_set_tree_pc.hpp"
-#include "../agm/kruskal.h"
+#include "in_out_functions.h"
+
 
 vector<int> segments_by_min_distance_array(graph& g,int n,int k);
 vector<int> segments_by_min_distance_tree(graph& g,int n,int k);
