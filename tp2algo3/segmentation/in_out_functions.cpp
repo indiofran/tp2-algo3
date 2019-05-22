@@ -3,6 +3,7 @@
 //
 
 #include "in_out_functions.h"
+#include <algorithm>
 
 
 graph image_to_graph (vector<vector<int> > image,vector<vector<int> > vertex,int h,int w){

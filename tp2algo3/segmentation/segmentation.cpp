@@ -3,6 +3,7 @@
 //
 
 #include "segmentation.h"
+#include <algorithm>
 
 //REVISAR COMO VIENE DADO EL K O SE LO DOY
 //REVISAR COMO AGARRAR LOS SEGMENTOS Y PASARLOS A MATRIZ

@@ -7,7 +7,7 @@
 
 
 int main() {
-
+/*
     //Ejercicio 1
 
     //Ancho y alto de la imagen a procesar
@@ -25,7 +25,7 @@ int main() {
     cout << w << endl;
 
     return 0;
-
+*/
    /*
 
     //int w, h;
@@ -90,29 +90,61 @@ int main() {
     //Ejercicio 2
 
     //ARREGLAR
-/*
+
     //Cantidad de ciudades y rutas
-    int n, m; cin >> n >> m;
+    int n,m; cin >> n >> m;
 
     //Lista de Aristas
     digraph H;
-    vector<int> costos;
+    vector<int> prices;
 
     //Costos
     for(int i = 0; i < n; ++i){
         int c;
         cin >> c;
-        costos.push_back(c);
+        prices.push_back(c);
     }
 
     //Grafo
     for(int i = 0; i < m; ++i){
+        int weight,from,to;
+        cin >> to >> from >> weight;
+        //cin >> from >> to >> weight; cual va?
+        for (int j = 0; j<60; j++) {  //falta el caso j=60
+            directed_edge e;
+            e.from = from;
+            e.subindiceFrom = j;
+            int subindiceTo = j - weight;
+            if (subindiceTo<0){
+                subindiceTo = 0;
+            }
+            int localPrice = prices[from];
+            int edgeValue = j - weight;
+            if (edgeValue<0){
+                edgeValue = -edgeValue;
+            } else {
+                edgeValue = 0;
+            }
+            while(j+edgeValue <= 60) {
+                e.to = to;
+                e.subindiceTo = subindiceTo;
+                e.weight = edgeValue * localPrice;
+                H.push_back(e);
+                subindiceTo++;
+                edgeValue++;
+            }
+        }
+        //j=60
         directed_edge e;
-        cin >> e.to >> e.from >> e.weight;
+        e.from = from;
+        e.subindiceFrom = 60;
+        e.to = to;
+        e.subindiceTo = 60 - weight;
+        e.weight = 0;
         H.push_back(e);
     }
 
     return 0;
 
-*/
+
 }
