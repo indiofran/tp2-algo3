@@ -166,3 +166,17 @@ vector<vector<int> > segments_to_image (vector<int> segments,int h,int w){
 
     return image;
 }
+
+//Menor a 256^3-1
+rgb change_base_to_256(int number){
+    rgb res;
+    int rest=number;
+
+    res.cero=rest%256;
+    rest=(rest)/256;
+    res.uno=rest%256;
+    rest=(rest)/256;
+    res.dos=rest%256;
+
+    return res;
+}

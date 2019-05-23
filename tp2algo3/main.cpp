@@ -4,32 +4,17 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <map>
 
 
 int main() {
-/*
-    //Ejercicio 1
+
+      //Ejercicio 1
 
     //Ancho y alto de la imagen a procesar
 
-    int w,h;
-    ifstream infile;
-    infile.open("testfile.in",std::ifstream::in);
-
-    if (!infile) {  cout << "Can't open file "<< endl;  exit(1); }
-
-    string inputLine ;
-
-    cin>>w;
-
-    cout << w << endl;
-
-    return 0;
-*/
-   /*
-
-    //int w, h;
-    //cin >> w >> h;
+    int w, h;
+    cin >> w >> h;
 
     //Lista de Aristas
     graph G;
@@ -66,26 +51,89 @@ int main() {
     //Imagen a Grafo
     G = image_to_graph(imagen,vertex,h,w);
 
-   
+
     int k;
     vector<int> segments = segments_by_min_distance_array(G,n,k);
 
     //Convierto los segmentos en formato imagen
     imagen = segments_to_image(segments,h,w);
 
+    /*
     //Cout de la segmentacion
     for(int i = 0; i < h; ++i){
 
         for(int j = 0; i < w; ++j){
             int pixel=imagen[i][j];
             cout << pixel;
+            cout<<'';
+        }
+        cout<<endl;
+    }
+    */
+
+    //Para cada cluster un color
+    map<int,rgb> clusters;
+
+    //Inserto todos los clusters que tengo
+    for (int l = 0; l < imagen.size(); ++l) {
+        rgb r;
+        clusters.insert ( std::pair<int,rgb>(segments[l],r) );
+    }
+
+    //Quiero tantos colores como clusters
+    //Generos numeros aleatorios en intervalos disjuntos para que no haya dos del mismo color
+    vector<int> randoms;
+    int interval = 256*256*256 -1;
+    interval = interval/clusters.size();
+
+    for (int a = 0; a <clusters.size() ; ++a) {
+        randoms.push_back(rand()%(a+1)*interval+a*interval);
+    }
+
+    vector<rgb> colors;
+
+    //Paso los randoms a base 256 para que tengan las tres componentes (RGB)
+    for (int b = 0; b < randoms.size(); ++b) {
+        colors.push_back(change_base_to_256(randoms[b]));
+    }
+
+    //Le asigno un color a cada cluster
+    int a=0;
+
+    for (auto it=clusters.begin(); it!=clusters.end(); ++it){
+        clusters.at(it->first)=colors[a];
+        a++;
+    }
+
+    vector<vector<rgb> > output;
+
+    //A cada uno le doy el color correspondiente
+    for (int a = 0; a < imagen.size(); ++a) {
+        vector<rgb> vacio;
+        output.push_back(vacio);
+
+        for (int i = 0; i <imagen[a].size() ; ++i) {
+            output[a].push_back(clusters.at(imagen[a][i]));
+        }
+    }
+
+    //Devuelvo la imagen
+    for(int i = 0; i < h; ++i){
+
+        for(int j = 0; i < w; ++j){
+
+            rgb pixel=output[i][j];
+            cout << pixel.dos;
+            cout<<'';
+            cout << pixel.uno;
+            cout<<'';
+            cout << pixel.cero;
+            cout<<'';
         }
         cout<<endl;
     }
 
 
-
-*/
 
     //Ejercicio 2
 
