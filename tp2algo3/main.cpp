@@ -112,8 +112,8 @@ int main() {
         //cin >> from >> to >> weight; cual va?
         for (int j = 0; j<60; j++) {  //falta el caso j=60
             directed_edge e;
-            e.from = from;
-            e.subindiceFrom = j;
+            e.from = (from*61)+j;
+            //e.subindiceFrom = j;
             int subindiceTo = j - weight;
             if (subindiceTo<0){
                 subindiceTo = 0;
@@ -126,8 +126,8 @@ int main() {
                 edgeValue = 0;
             }
             while(j+edgeValue <= 60) {
-                e.to = to;
-                e.subindiceTo = subindiceTo;
+                e.to = (to*61)+subindiceTo;
+                //e.subindiceTo = subindiceTo;
                 e.weight = edgeValue * localPrice;
                 H.push_back(e);
                 subindiceTo++;
@@ -136,10 +136,10 @@ int main() {
         }
         //j=60
         directed_edge e;
-        e.from = from;
-        e.subindiceFrom = 60;
-        e.to = to;
-        e.subindiceTo = 60 - weight;
+        e.from = (from*61)+60;
+        //e.subindiceFrom = 60;
+        e.to = (to*61)+60;
+        //e.subindiceTo = 60 - weight;
         e.weight = 0;
         H.push_back(e);
     }
