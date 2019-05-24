@@ -15,14 +15,15 @@ using namespace std;
 int DijkstraPQ::dijkstraPQ2 (digraph H, int raiz, int n) { //el fin es el nodo donde quiero terminar dijkstra, pero capaz es mejor dar todos y depsues ver
     const int none = -1;
     using bridge = tuple<int, int, int>;
+
     vector<int> T(n,none), D(n);
     T[raiz] = raiz;
     D[raiz] = 0;
     priority_queue<bridge> S;
-    digraph sH;
+    //digraph sH;
     for(int i = 0; i<H.size(); i++){
         if (H[i].from == raiz){
-            sH.push_back(H[i]);
+            //sH.push_back(H[i]);
             S.push({-H[i].weight, raiz, H[i].to});
         }
     }
@@ -33,10 +34,10 @@ int DijkstraPQ::dijkstraPQ2 (digraph H, int raiz, int n) { //el fin es el nodo d
         if(T[to] == none){
             T[to] = from;
             D[to] = -weight;
-            for(int i = 0; i<H.size(); i++){
-                if (H[i].from == to){
-                    if(T[H[i].to] == none){
-                        S.push({weight-H[i].weight, to, H[i].to});
+            for(int j = 0; j<H.size(); j++){
+                if (H[j].from == to){
+                    if(T[H[j].to] == none){
+                        S.push({weight-H[j].weight, to, H[j].to});
                     }
                 }
             }

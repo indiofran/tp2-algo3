@@ -201,20 +201,27 @@ int main() {
             }
         }
         //j=60
-        directed_edge e1;
-        e1.from = (from*61)+60;
-        e1.to = (to*61)+(60-weight);
-        e1.weight = 0;
-        H.push_back(e1);
-        directed_edge e2;
-        e1.from = (to*61)+60;
-        e1.to = (from*61)+(60-weight);
-        e1.weight = 0;
-        H.push_back(e2);
+        directed_edge e3;
+        e3.from = (from*61)+60;
+        e3.to = (to*61)+(60-weight);
+        e3.weight = 0;
+        H.push_back(e3);
+        directed_edge e4;
+        e4.from = (to*61)+60;
+        e4.to = (from*61)+(60-weight);
+        e4.weight = 0;
+        H.push_back(e4);
     }
 
-    int d = DijkstraPQ::dijkstraPQ2(H,0,n);
-
+    int d = DijkstraPQ::dijkstraPQ2(H,(0*61),n);
+/*
+    for(int j = 0; j<n; j++){
+        for(int i = 0; i<H.size(); i++) {
+            if (H[i].from >= (j*61) && H[i].from <= (j*61)+60) {
+                cout << H[i].from << "," << H[i].weight << "," << H[i].to << endl;
+            }
+        }
+    }*/
 
     return 0;
 
