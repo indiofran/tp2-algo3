@@ -34,3 +34,7 @@
 #By Cisco
 /BSDS300
 
+tp2algo3/cmake-build-debug
+tp2algo3/.idea
+.idea
+.vscode
