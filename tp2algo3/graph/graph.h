@@ -13,14 +13,13 @@ using namespace std;
 
 typedef int node;
 
-struct edge
-{
+struct edge {
     node from;
     node to;
-    float weight;
+    int weight;
 
-    bool operator<(const edge& a);
-    bool operator==(const edge& a);
+    bool operator<(const edge& a)const;
+    bool operator==(const edge& a)const;
 };
 
 typedef vector<edge> graph;

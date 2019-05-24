@@ -1,20 +1,28 @@
 //
-// Created by hghianni on 13/05/19.
+// Created by Hernan Ghianni on 14/5/19.
 //
 
-#include "disjoint_set_tree.hpp"
+#include "disjoint_set_tree_pc.hpp"
 
-int disjoint_set_tree::find(int i)   {
-    return p[i] == none ? i : find(p[i]);
+
+int disjoint_set_tree_pc::find(int i)  const {
+
+    //Path compression
+
+    return p[i] == none ? i : (p[i] = find(p[i]));
 }
 
-void disjoint_set_tree::unite(int i, int j) {
+void disjoint_set_tree_pc::unite(int i, int j) {
 
     //Union by rank
+
+    //Raices de ambos conjuntos.
 
     i = find(i), j = find(j);
 
     if(i != j) {
+
+        //Cuelgo el de menor rank de la raiz del otro.
 
         if (r[i] < r[j]){
             p[i] = j;
@@ -34,22 +42,21 @@ void disjoint_set_tree::unite(int i, int j) {
 }
 
 //Le paso el padre sino no funciona
-void disjoint_set_tree::update_internal_difference(int i, int nuevoInt) {
+void disjoint_set_tree_pc::update_internal_difference(int i, int nuevoInt) {
     _internal_difference[i]=nuevoInt;
 }
 
 //Le paso el padre sino no funciona
-int disjoint_set_tree::internal_difference(int c){
+int disjoint_set_tree_pc::internal_difference(int c){
     return _internal_difference[c];
 }
 
 //Le paso el padre sino no funciona
-int disjoint_set_tree::size(int c){
+int disjoint_set_tree_pc::size(int c){
     return _size[c];
 }
 
-
-vector<int> disjoint_set_tree::segmentation(){
+vector<int> disjoint_set_tree_pc::segmentation(){
     vector<int> segments;
     for (int i = 0; i < p.size(); ++i) {
         segments.push_back(find(i));

@@ -16,7 +16,9 @@ typedef int node;
 struct directed_edge
 {
     node from;
+    //int subindiceFrom;
     node to;
+    //int subindiceTo;
     float weight;
 
     bool operator<(const directed_edge& a);

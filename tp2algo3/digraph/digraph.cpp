@@ -12,6 +12,7 @@ bool directed_edge::operator<(const directed_edge& a)
 bool directed_edge::operator==(const directed_edge& a)
 {
     bool same_nodes_and_direction = this->to == a.to && this->from == a.from;
+            //&& this->subindiceFrom == a.subindiceFrom && this->subindiceTo == a.subindiceTo;
     bool same_weight = this->weight == a.weight;
     return same_nodes_and_direction && same_weight;
 }
