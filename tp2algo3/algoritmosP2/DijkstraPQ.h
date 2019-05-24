@@ -9,7 +9,8 @@
 class DijkstraPQ {
 
 public:
-    int dijkstraPQ(digraph H, int raiz, int n); //n es numero de vertices
+    //static int dijkstraPQ(digraph H, int raiz, int n); //n es numero de vertices
+    static int dijkstraPQ2(digraph H, int raiz, int n);
 
 };
 

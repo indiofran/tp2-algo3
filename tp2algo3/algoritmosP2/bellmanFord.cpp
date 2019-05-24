@@ -18,7 +18,7 @@ const int none = -1;
 int cost(neigh x) {return x.second;}
 int to(neigh x) {return x.first;}
 
-int main() {
+int bellmaFord() {
     //transformacion de aristas a adyacencias
     int n, m, r; cin >> n >> m >> r;
     graph G(n);

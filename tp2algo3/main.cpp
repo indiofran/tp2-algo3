@@ -8,7 +8,7 @@
 
 
 int main() {
-
+/*
       //Ejercicio 1
 
     //Ancho y alto de la imagen a procesar
@@ -57,7 +57,7 @@ int main() {
 
     //Convierto los segmentos en formato imagen
     imagen = segments_to_image(segments,h,w);
-
+*/
     /*
     //Cout de la segmentacion
     for(int i = 0; i < h; ++i){
@@ -70,7 +70,7 @@ int main() {
         cout<<endl;
     }
     */
-
+/*
     //Para cada cluster un color
     map<int,rgb> clusters;
 
@@ -132,7 +132,7 @@ int main() {
         }
         cout<<endl;
     }
-
+*/
 
 
     //Ejercicio 2
@@ -213,7 +213,7 @@ int main() {
         H.push_back(e2);
     }
 
-    //int d = dijkstraPQ(H,0,n);
+    int d = DijkstraPQ::dijkstraPQ2(H,0,n);
 
 
     return 0;
