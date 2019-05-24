@@ -4,9 +4,12 @@
 
 #ifndef TP2_ALGO3_DIJKSTRAPQ_H
 #define TP2_ALGO3_DIJKSTRAPQ_H
-
+#include "../digraph/digraph.h"
 
 class DijkstraPQ {
+
+public:
+    int dijkstraPQ(digraph H, int raiz, int n); //n es numero de vertices
 
 };
 
