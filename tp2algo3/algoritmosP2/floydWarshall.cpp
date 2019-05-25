@@ -16,7 +16,7 @@ const int infty = numeric_limits<int>::max() / 2 - 1; //valor apropiado
 const int none = -1;
 
 
-int main() {
+int floydWarshall() {
     //transformacion de aristas a adyacencias
     int n, m; cin >> n >> m;
     matrix D(n, vector<int>(n, infty));  //Matriz de pesos

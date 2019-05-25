@@ -10,42 +10,40 @@
 
 using namespace std;
 
-//vecino, costo
-using neigh = pair<int, int>;
-using graph = vector<vector<neigh>>;
-//costo, v, w
-using bridge = tuple<int,int,int>;
 
-const int none = -1;
 
-int costo(neigh x) {return x.second;}
-int vecino(neigh x) {return x.first;}
+int DijkstraPQ::dijkstraPQ2 (digraph H, int raiz, int n) { //el fin es el nodo donde quiero terminar dijkstra, pero capaz es mejor dar todos y depsues ver
+    const int none = -1;
+    using bridge = tuple<int, int, int>;
 
-int main() {
-    //transformacion de aristas a adyacencias
-    int n, m, r; cin >> n >> m >> r;
-    graph G(n);
-    for(int i = 0; i < m; ++i) {
-        int v, w, c; cin >> v >> w >> c;
-        G[v].push_back({w,c});
-    }
-
-    //algoritmo de dijkstra
-    vector<int> T(n, none), D(n); T[r] = r; D[r] = 0;
+    vector<int> T(n,none), D(n);
+    T[raiz] = raiz;
+    D[raiz] = 0;
     priority_queue<bridge> S;
-    for(auto x : G[r]) S.push({-costo(x), r, vecino(x)});
-    while(not S.empty()) {
-        int c, v, w;
-        tie(c,v,w) = S.top();
+    //digraph sH;
+    for(int i = 0; i<H.size(); i++){
+        if (H[i].from == raiz){
+            //sH.push_back(H[i]);
+            S.push({-H[i].weight, raiz, H[i].to});
+        }
+    }
+    while(not S.empty()){
+        int weight, from, to;
+        tie(weight, from, to) = S.top();
         S.pop();
-        if(T[w] == none) {
-            T[w] = v; D[w] = -c;
-            for(auto x : G[w]) if(T[vecino(x)] == none)
-                    S.push({c-costo(x), w, vecino(x)});
+        if(T[to] == none){
+            T[to] = from;
+            D[to] = -weight;
+            for(int j = 0; j<H.size(); j++){
+                if (H[j].from == to){
+                    if(T[H[j].to] == none){
+                        S.push({weight-H[j].weight, to, H[j].to});
+                    }
+                }
+            }
         }
     }
 
-    //output del algoritmo
     for(int i = 0; i < n; ++i) cout << "T[" << i << "] = " << T[i] << " "; cout << endl;
     for(int i = 0; i < n; ++i) cout << "D[" << i << "] = " << D[i] << " "; cout << endl;
     return 0;
