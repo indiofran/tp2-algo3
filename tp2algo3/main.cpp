@@ -30,7 +30,7 @@ int main(int argc, char* argv[])
         {
             vector<int> vacio;
             vertex.push_back(vacio);
-            imagen.push_back(vacio);
+            //imagen.push_back(vacio);
 
             for(int j = 0; j < w; ++j){
                 int pixel;
