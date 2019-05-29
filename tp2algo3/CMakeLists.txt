@@ -9,3 +9,7 @@ add_executable(tp3algo3 main.cpp llenaloDeSuper.cpp disjoint_set/disjoint_set_ar
         agm/kruskal.cpp agm/kruskal.h segmentation/in_out_functions.cpp segmentation/in_out_functions.h
         algoritmosP2/Dijkstra.h algoritmosP2/Dijkstra.cpp algoritmosP2/DijkstraPQ.h algoritmosP2/DijkstraPQ.cpp
         algoritmosP2/bellmanFord.h algoritmosP2/bellmanFord.cpp algoritmosP2/floydWarshall.h algoritmosP2/floydWarshall.cpp)
+
+add_executable(llenaloDeSuper llenaloDeSuper.cpp digraph/digraph.h digraph/digraph.cpp
+        algoritmosP2/Dijkstra.h algoritmosP2/Dijkstra.cpp algoritmosP2/DijkstraPQ.h algoritmosP2/DijkstraPQ.cpp
+        algoritmosP2/bellmanFord.h algoritmosP2/bellmanFord.cpp algoritmosP2/floydWarshall.h algoritmosP2/floydWarshall.cpp)

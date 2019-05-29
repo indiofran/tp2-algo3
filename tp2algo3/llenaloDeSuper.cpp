@@ -15,7 +15,7 @@
 //Ejercicio 2
 
 //ARREGLAR
-int llenaloDeSuper(int argc, char* argv[]){
+int main(){
 
     //Cantidad de ciudades y rutas
     int n,m; cin >> n >> m;
