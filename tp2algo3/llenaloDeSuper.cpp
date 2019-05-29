@@ -11,6 +11,7 @@
 #include <cstring>
 #include <random>
 #include "algoritmosP2/DijkstraPQ.h"
+//#include "algoritmosP2/Dijkstra.h"
 
 //Ejercicio 2
 
@@ -34,8 +35,8 @@ int main(){
 //Grafo
     for(int i = 0; i < m; ++i){
         int weight,from,to;
-        cin >> to >> from >> weight;
-        //cin >> from >> to >> weight; cual va?
+        //cin >> to >> from >> weight;
+        cin >> from >> to >> weight; //cual va?
         for (int j = 0; j<60; j++) {  //falta el caso j=60
             directed_edge e1;
             e1.from = (from*61)+j;
@@ -90,8 +91,9 @@ int main(){
         e4.weight = 0;
         H.push_back(e4);
     }
-
-    int d = DijkstraPQ::dijkstraPQ2(H,(0*61),n);
+    for (int i=0; i < n; i++) {
+        DijkstraPQ::dijkstraPQ(H, (i * 61), n);
+    }
 /*
     for(int j = 0; j<n; j++){
         for(int i = 0; i<H.size(); i++) {

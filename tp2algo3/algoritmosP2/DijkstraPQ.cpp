@@ -10,9 +10,7 @@
 
 using namespace std;
 
-
-
-int DijkstraPQ::dijkstraPQ2 (digraph H, int raiz, int n) { //el fin es el nodo donde quiero terminar dijkstra, pero capaz es mejor dar todos y depsues ver
+int DijkstraPQ::dijkstraPQ (digraph H, int raiz, int n) { //el fin es el nodo donde quiero terminar dijkstra, pero capaz es mejor dar todos y depsues ver
     const int none = -1;
     using bridge = tuple<int, int, int>;
     int vertices = n * 61;
@@ -29,12 +27,12 @@ int DijkstraPQ::dijkstraPQ2 (digraph H, int raiz, int n) { //el fin es el nodo d
     while(not S.empty()){
         int weight, from, to;
         tie(weight, from, to) = S.top();
-        cout << weight << "," << from << "," << to << endl;
+        //cout << weight << "," << from << "," << to << endl;
         S.pop();
-        if(T[to] == -1){
+        if(T[to] == none){
             T[to] = from;
             D[to] = -weight;
-            cout << D[to] << endl;
+            //cout << "T[" << to << "] = " << T[to] << " " << "D[" << to << "] = " << D[to] << endl;
             for(int j = 0; j<H.size(); j++){
                 if (H[j].from == to){
                     if(T[H[j].to] == none){
@@ -46,18 +44,12 @@ int DijkstraPQ::dijkstraPQ2 (digraph H, int raiz, int n) { //el fin es el nodo d
     }
 
     for(int i = 0; i<n; i++){
-        int min = 10000;
-        int minJ = 0;
-        for(int j = (i*61); j<(i*61)+60; j++){
-            if(D[j]<min){
-                minJ = j;
-            }
+        if (i*61 != raiz) {
+            cout << raiz/61 << "," << i << "," << D[i*61] << endl;
         }
-        cout << "T[" << minJ << "] = " << T[i] << "," << "D[" << minJ << "] = " << D[i] << endl;
     }
 
 
-    //for(int i = 0; i < n; ++i) cout << "T[" << i << "] = " << T[i] << " "; cout << endl;
-    //for(int i = 0; i < n; ++i) cout << "D[" << i << "] = " << D[i] << " "; cout << endl;
+    //for(int i = 0; i < n*61; ++i) cout << "T[" << i << "] = " << T[i] << " " << "D[" << i << "] = " << D[i] << endl;
     return 0;
 }

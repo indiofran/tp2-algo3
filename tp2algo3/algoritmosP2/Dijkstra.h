@@ -4,9 +4,12 @@
 
 #ifndef TP2_ALGO3_DIJKSTRA_H
 #define TP2_ALGO3_DIJKSTRA_H
+#include "../digraph/digraph.h"
 
 
 class Dijkstra {
+
+    static int dijkstra(digraph H, int raiz, int n);
 
 };
 
