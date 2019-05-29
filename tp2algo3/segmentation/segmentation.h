@@ -15,7 +15,7 @@
 
 vector<int> segments_by_min_distance_array(graph& g,int n,int k);
 vector<int> segments_by_min_distance_tree(graph& g,int n,int k);
-vector<int> segments_by_min_distance_tree_pv(graph& g,int n,int k);
+vector<int> segments_by_min_distance_tree_pc(graph& g,int n,int k);
 
 
 

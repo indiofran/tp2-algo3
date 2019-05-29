@@ -116,7 +116,7 @@ vector<int> segments_by_min_distance_tree(graph& g,int n,int k) {
     return segments.segmentation();
 }
 
-vector<int> segments_by_min_distance_array_tree_pc(graph& g,int n,int k) {
+vector<int> segments_by_min_distance_tree_pc(graph& g,int n,int k) {
 
     //Cantidad de aristas
     unsigned int m = g.size();

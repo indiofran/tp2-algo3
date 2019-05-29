@@ -4,135 +4,78 @@
 #include <fstream>
 #include <sstream>
 #include <map>
+#include <cstring>
+#include <random>
 #include "algoritmosP2/DijkstraPQ.h"
 
+void guide();
+vector<vector<int>> read_image(string path);
+void save_image(vector<vector<int>> image, vector<int> segments);
 
-int main() {
-/*
-      //Ejercicio 1
+int main(int argc, char* argv[])
+{
+    if (argc == 3 && strncmp(argv[1], "-r", 2) == 0)
+    {
+        string path = argv[2];
+        vector<vector<int>> imagen = read_image(path);
 
-    //Ancho y alto de la imagen a procesar
+        //Numeracion de los vertices
+        vector<vector<int>> vertex;
+        int v = 0;
+        int h = imagen.size();
+        int w = imagen[0].size();
 
-    int w, h;
-    cin >> w >> h;
+        //Armo las matrices de pixeles y numero de vertices
+        for(int i = 0; i < h; ++i)
+        {
+            vector<int> vacio;
+            vertex.push_back(vacio);
+            //imagen.push_back(vacio);
 
-    //Lista de Aristas
-    graph G;
-
-    //Cantidad de nodos
-    int n=h*w;
-
-
-    //Imagen
-    vector<vector<int> > imagen;
-
-    //Numeracion de los vertices
-    vector<vector<int> > vertex ;
-    int v=0;
-
-    //Armo las matrices de pixeles y numero de vertices
-    for(int i = 0; i < h; ++i){
-
-        vector<int> vacio;
-        vertex.push_back(vacio);
-        imagen.push_back(vacio);
-
-        for(int j = 0; i < w; ++j){
-            int pixel;
-            cin >> pixel;
-            imagen[i].push_back(pixel);
-            vertex[i].push_back(v);
-            v++;
+            for(int j = 0; j < w; ++j){
+                int pixel;
+                //cin >> pixel;
+                //imagen[i].push_back(pixel);
+                vertex[i].push_back(v);
+                v++;
+            }
         }
-    }
 
-    //Gaussian Filter?
+        //Gaussian Filter?
 
-    //Imagen a Grafo
-    G = image_to_graph(imagen,vertex,h,w);
+        //Imagen a Grafo
+        graph G = image_to_graph(imagen,vertex,h,w);
 
+        int n = h*w;
+        int k = 500000;
+        vector<int> segments = segments_by_min_distance_tree_pc(G,n,k);
 
-    int k;
-    vector<int> segments = segments_by_min_distance_array(G,n,k);
+        //Convierto los segmentos en formato imagen
+        vector<vector<int>> segmented_image = segments_to_image(segments,h,w);
 
-    //Convierto los segmentos en formato imagen
-    imagen = segments_to_image(segments,h,w);
-*/
-    /*
-    //Cout de la segmentacion
-    for(int i = 0; i < h; ++i){
+        save_image(segmented_image, segments);
 
-        for(int j = 0; i < w; ++j){
-            int pixel=imagen[i][j];
-            cout << pixel;
-            cout<<'';
+        return 0;
+
+        /*
+        //Cout de la segmentacion
+        for(int i = 0; i < h; ++i){
+
+            for(int j = 0; i < w; ++j){
+                int pixel=imagen[i][j];
+                cout << pixel;
+                cout<<'';
+            }
+            cout<<endl;
         }
-        cout<<endl;
-    }
-    */
-/*
-    //Para cada cluster un color
-    map<int,rgb> clusters;
+        */
 
-    //Inserto todos los clusters que tengo
-    for (int l = 0; l < imagen.size(); ++l) {
-        rgb r;
-        clusters.insert ( std::pair<int,rgb>(segments[l],r) );
+    }
+    else
+    {
+        guide();
     }
 
-    //Quiero tantos colores como clusters
-    //Generos numeros aleatorios en intervalos disjuntos para que no haya dos del mismo color
-    vector<int> randoms;
-    int interval = 256*256*256 -1;
-    interval = interval/clusters.size();
-
-    for (int a = 0; a <clusters.size() ; ++a) {
-        randoms.push_back(rand()%(a+1)*interval+a*interval);
-    }
-
-    vector<rgb> colors;
-
-    //Paso los randoms a base 256 para que tengan las tres componentes (RGB)
-    for (int b = 0; b < randoms.size(); ++b) {
-        colors.push_back(change_base_to_256(randoms[b]));
-    }
-
-    //Le asigno un color a cada cluster
-    int a=0;
-
-    for (auto it=clusters.begin(); it!=clusters.end(); ++it){
-        clusters.at(it->first)=colors[a];
-        a++;
-    }
-
-    vector<vector<rgb> > output;
-
-    //A cada uno le doy el color correspondiente
-    for (int a = 0; a < imagen.size(); ++a) {
-        vector<rgb> vacio;
-        output.push_back(vacio);
-
-        for (int i = 0; i <imagen[a].size() ; ++i) {
-            output[a].push_back(clusters.at(imagen[a][i]));
-        }
-    }
-
-    //Devuelvo la imagen
-    for(int i = 0; i < h; ++i){
-
-        for(int j = 0; i < w; ++j){
-
-            rgb pixel=output[i][j];
-            cout << pixel.dos;
-            cout<<'';
-            cout << pixel.uno;
-            cout<<'';
-            cout << pixel.cero;
-            cout<<'';
-        }
-        cout<<endl;
-    }
-*/
 
 
     //Ejercicio 2
@@ -226,4 +169,106 @@ int main() {
     return 0;
 
 
+}
+
+vector<vector<int>> read_image(string path)
+{
+    vector<vector<int>> image;
+    int width, height, formato, maximo; //Ancho y alto de la imagen a procesar
+
+    ifstream file;
+    file.open(path);
+    if (file.is_open())
+    {
+        if (!file.eof())
+        {
+            // file >> formato;
+            file >> width >> height;
+            // file >> maximo;
+            image = vector<vector<int>>(height, vector<int>(width));
+        }
+        int fila = 0, columna = 0;
+        while (!file.eof())
+        {
+            if (columna == width)
+            {
+                columna = 0;
+                fila++;
+            }
+            file >> image[fila][columna];
+            columna++;
+        }
+    }
+    file.close();
+
+    return image;
+}
+
+void save_image(vector<vector<int>> imagen, vector<int> segments)
+{
+    int h = imagen.size();
+    int w = imagen[0].size();
+
+    //Para cada cluster un color
+    map<int,rgb> clusters;
+
+    //Inserto todos los clusters que tengo
+    for (int l = 0; l < segments.size(); ++l)
+    {
+        rgb r;
+        clusters.insert ( std::pair<int,rgb>(segments[l],r) );
+    }
+
+
+    vector<rgb> colors(clusters.size());
+    for (int i = 0; i < colors.size(); i++)
+    {
+        colors[i].cero = rand()%256;
+        colors[i].uno = rand()%256;
+        colors[i].dos = rand()%256;
+    }
+
+    //Le asigno un color a cada cluster
+    int a=0;
+
+    for (auto it=clusters.begin(); it!=clusters.end(); ++it){
+        clusters.at(it->first)=colors[a];
+        a++;
+    }
+
+    vector<vector<rgb>> output;
+
+    //A cada uno le doy el color correspondiente
+    for (a = 0; a < imagen.size(); ++a) {
+        vector<rgb> vacio;
+        output.push_back(vacio);
+
+        for (int i = 0; i <imagen[a].size() ; ++i) {
+            int cluster = imagen[a][i];
+            output[a].push_back(clusters.at(cluster));
+        }
+    }
+
+    ofstream file;
+    file.open("./salida.ppm");
+
+    file << "P3\n";
+    file << w << " " << h << "\n";
+    file << 255 << "\n";
+
+    //Devuelvo la imagen
+    for(int i = 0; i < h; ++i){
+        for(int j = 0; j < w; ++j){
+            rgb pixel = output[i][j];
+            file << pixel.dos << " " << pixel.uno << " " << pixel.cero << "  ";
+        }
+        file << '\n';
+    }
+
+    file.close();
+}
+
+void guide()
+{
+    cout << "Hacer una guia de uso del programa" << endl;
 }
