@@ -93,6 +93,7 @@ int main(){
     }
     for (int i=0; i < n; i++) {
         DijkstraPQ::dijkstraPQ(H, (i * 61), n);
+        //Dijkstra::dijkstra(H, (i * 61), n);
     }
 /*
     for(int j = 0; j<n; j++){

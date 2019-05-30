@@ -9,6 +9,7 @@
 
 class Dijkstra {
 
+public:
     static int dijkstra(digraph H, int raiz, int n);
 
 };
