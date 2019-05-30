@@ -9,9 +9,9 @@
 #include "../graph/graph.h"
 
 
-graph image_to_graph (vector<vector<int> > image,vector<vector<int> > vertex,int h,int w);
+graph image_to_graph (vector<vector<int> > &image,vector<vector<int> > &vertex,int h,int w);
 
-vector<vector<int> > segments_to_image (vector<int> segments,int h,int w);
+vector<vector<int> > segments_to_image (vector<int> &segments,int h,int w);
 
 
 struct rgb {

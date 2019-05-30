@@ -95,14 +95,7 @@ int main(){
         DijkstraPQ::dijkstraPQ(H, (i * 61), n);
         //Dijkstra::dijkstra(H, (i * 61), n);
     }
-/*
-    for(int j = 0; j<n; j++){
-        for(int i = 0; i<H.size(); i++) {
-            if (H[i].from >= (j*61) && H[i].from <= (j*61)+60) {
-                cout << H[i].from << "," << H[i].weight << "," << H[i].to << endl;
-            }
-        }
-    }*/
+
 
 return 0;
 
