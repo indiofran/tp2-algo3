@@ -9,27 +9,28 @@
 
 using namespace std;
 
-using neigh = pair<int, int>;         ////vecino, costo
-using graph = vector<vector<neigh>>;
+int BellmanFord::bellmanFord(digraph H, int raiz, int n) {
+    using neigh = pair<int, int>;         ////vecino, costo
+    using graph = vector<vector<neigh>>;
+    int vertice = n*61
 
-const int infty = numeric_limits<int>::max() / 2 - 1;
-const int none = -1;
+    const int infty = numeric_limits<int>::max() / 2 - 1;
+    const int none = -1;
 
-int cost(neigh x) {return x.second;}
-int to(neigh x) {return x.first;}
+    int cost(neigh x) {return x.second;}
+    int to(neigh x) {return x.first;}
 
-int bellmaFord() {
     //transformacion de aristas a adyacencias
-    int n, m, r; cin >> n >> m >> r;
     graph G(n);
-    for(int i = 0; i < m; ++i) {
-        int v, w, c; cin >> v >> w >> c;
-        G[v].push_back({w,c});
+    for(int i = 0; i < H.size(); ++i) {
+        if (H[i].from == raiz){
+            G[raiz].push_back({H[i].to,H[i].weight});
+        }
     }
 
     //algoritmo de Bellman-Ford
-    vector<int> D(n, infty), T(n, none), M(n, false);
-    D[r] = 0; bool changed = M[r] = true;
+    vector<int> D(vertices, infty), T(vertices, none), M(vertices, false);
+    D[raiz] = 0; bool changed = M[raiz] = true;
     for(int i = 0; i <= n and changed; ++i) {
         changed = false;
         for(int v = 0; v < n; ++v) if(M[v]) {
@@ -44,10 +45,10 @@ int bellmaFord() {
     }
 
     //output del algoritmo
-    if(changed) cout << "Ciclo negativo detectado" << endl;
-    else {
-        for(int i = 0; i < n; ++i) cout << "T[" << i << "] = " << T[i] << " "; cout << endl;
-        for(int i = 0; i < n; ++i) cout << "D[" << i << "] = " << D[i] << " "; cout << endl;
+   for(int i = 0; i<n; i++){
+        if (i*61 != raiz) {
+            cout << raiz/61 << "," << i << "," << D[i*61] << endl;
+        }
     }
     return 0;
 }
