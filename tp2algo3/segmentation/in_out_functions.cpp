@@ -6,7 +6,7 @@
 #include <algorithm>
 
 
-graph image_to_graph (vector<vector<int> > image,vector<vector<int> > vertex,int h,int w){
+graph image_to_graph (vector<vector<int> > &image,vector<vector<int> > &vertex,int h,int w){
 
     graph G;
     for (int i = 0; i < h; ++i) {
@@ -150,7 +150,7 @@ graph image_to_graph (vector<vector<int> > image,vector<vector<int> > vertex,int
     return G;
 }
 
-vector<vector<int> > segments_to_image (vector<int> segments,int h,int w){
+vector<vector<int> > segments_to_image (vector<int> &segments,int h,int w){
     vector<vector<int> > image;
     int k=0;
 
