@@ -10,21 +10,19 @@
 
 using namespace std;
 
-using matrix = vector<vector<int>>;
-const int infty = numeric_limits<int>::max() / 2 - 1; //valor apropiado
-
-const int none = -1;
-
-
-int floydWarshall() {
+int FloydWarshall::floydWarshall(digraph H, int raiz, int n) {
+    const int none = -1;
+    using matrix = vector<vector<int>>;
+    const int infty = numeric_limits<int>::max() / 2 - 1; 
     //transformacion de aristas a adyacencias
-    int n, m; cin >> n >> m;
-    matrix D(n, vector<int>(n, infty));  //Matriz de pesos
-    matrix P(n, vector<int>(n, none));   //Matriz de caminos
-    for(int i = 0; i < m; ++i) {
-        int v, w, c; cin >> v >> w >> c;
-        D[v][w] = c;
-        P[v][w] = v;
+    int vertices = n*61;
+    matrix D(vertices, vector<int>(vertices, infty));  //Matriz de pesos
+    matrix P(vertices, vector<int>(vertices, none));   //Matriz de caminos
+    for(int i = 0; i < H.size(); ++i) {
+        if (H[i].from == raiz){
+            D[raiz][H[i].weight] = H[i].to;
+            P[raiz][H[i].weight] = raiz;
+        }
     }
     for(int v = 0; v < n; ++v) {D[v][v] = 0; P[v][v] = v;}
 
@@ -38,12 +36,10 @@ int floydWarshall() {
             c = D[i][i] < 0;
         }
 
-    if(c) cout << "Ciclo negativo detectado" << endl;
-    else {
-        cout << "D = " << endl;
-        for(int i = 0; i < n; ++i) {for(int j = 0; j < n; ++j) cout << setw(3) << D[i][j] << " "; cout << endl;}
-        cout << "P = " << endl;
-        for(int i = 0; i < n; ++i) {for(int j = 0; j < n; ++j) cout << setw(3) << P[i][j] << " "; cout << endl;}
+    for(int i = 0; i<n; i++){
+        if (i*61 != raiz) {
+            cout << raiz/61 << "," << i << "," << D[i*61] << endl;
+        }
     }
     return 0;
 }
