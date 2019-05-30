@@ -6,9 +6,11 @@
 #define TP2_ALGO3_BELLMANFORD_H
 
 
-class bellmanFord {
-
+class BellmanFord {
+public:
+    static int bellmanFord(digraph H, int raiz, int n);
 };
+
 
 
 #endif //TP2_ALGO3_BELLMANFORD_H
