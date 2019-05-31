@@ -36,10 +36,14 @@ int FloydWarshall::floydWarshall(digraph H, int raiz, int n) {
             c = D[i][i] < 0;
         }
 
-    for(int i = 0; i<n; i++){
-        if (i*61 != raiz) {
-            cout << raiz/61 << "," << i << "," << D[i*61] << endl;
+    for(int i = 0; i < n; ++i) {
+        for(int j = 0; j < n; ++j) {
+            if (i*61 != raiz){
+                cout << raiz/61 << "," << P[i*61][j]<< ","<< D[i*61][j] ; 
+                cout << endl;
+            }
         }
+    }
     }
     return 0;
 }
