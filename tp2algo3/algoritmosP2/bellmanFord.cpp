@@ -9,46 +9,52 @@
 
 using namespace std;
 
-using neigh = pair<int, int>;         ////vecino, costo
-using graph = vector<vector<neigh>>;
+//using neigh = pair<int, int>;         ////vecino, costo
+//using  adjacency_list = vector<vector<neigh>>;
 
 const int infty = numeric_limits<int>::max() / 2 - 1;
 const int none = -1;
 
-int cost(neigh x) {return x.second;}
-int to(neigh x) {return x.first;}
+//int cost(neigh x) {return x.second;}
+//int to(neigh x) {return x.first;}
 
 int BellmanFord::bellmanFord(digraph H, int raiz, int n) {
 
-    int vertice = n*61;
-    //transformacion de aristas a adyacencias
-    graph G(n);
-    for(int i = 0; i < H.size(); ++i) {
-        if (H[i].from == raiz){
-            G[raiz].push_back({H[i].to,H[i].weight});
-        }
-    }
+    //Lista de sucesores
+    //adjacency_list G(n*61);
 
-    //algoritmo de Bellman-Ford
-    vector<int> D(vertice, infty), T(vertice, none), M(vertice, false);
-    D[raiz] = 0; bool changed = M[raiz] = true;
-    for(int i = 0; i <= n and changed; ++i) {
+   // for(int i = 0; i < H.size(); ++i) {
+       // G[H[i].from].push_back({H[i].to,H[i].weight});
+   // }
+
+    vector<int> D(n*61, infty),  M(n*61, false);
+
+    D[raiz] = 0;
+
+    bool changed = M[raiz] = true;
+
+    for(int i = 0; i <= n*61 and changed; ++i) {
         changed = false;
-        for(int v = 0; v < n; ++v) if(M[v]) {
-                M[v] = false;
-                for(auto e: G[v]) if(D[v] + cost(e) < D[to(e)])
-                    {
-                        M[to(e)] = changed = true;
-                        D[to(e)] = D[v] + cost(e);
-                        T[to(e)] = v;
-                    }
+
+            for(int j=0 ; j<H.size();j++){
+
+                M[H[j].from] = false;
+
+                if (D[H[j].from] + H[j].weight < D[H[j].to]) {
+                    M[H[j].to] = changed = true;
+                    D[H[j].to] = D[H[j].from] + H[j].weight;
+                }
             }
     }
 
+
     //output del algoritmo
-   for(int i = 0; i<n; i++){
-        if (i*61 != raiz) {
-            cout << raiz/61 << "," << i << "," << D[i*61] << endl;
+    if(changed) cout << "Ciclo negativo detectado" << endl;
+    else {
+        for(int i = 0; i<n; i++){
+            if (i*61 != raiz) {
+                cout << raiz/61 << "," << i << "," << D[i*61] << endl;
+            }
         }
     }
     return 0;

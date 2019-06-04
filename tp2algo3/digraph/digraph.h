@@ -17,7 +17,7 @@ struct directed_edge
 {
     node from;
     node to;
-    float weight;
+    int weight;
 
     bool operator<(const directed_edge& a);
     bool operator==(const directed_edge& a);

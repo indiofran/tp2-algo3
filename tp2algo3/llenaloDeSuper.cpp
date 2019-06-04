@@ -10,8 +10,10 @@
 #include <map>
 #include <cstring>
 #include <random>
-#include "algoritmosP2/DijkstraPQ.h"
-//#include "algoritmosP2/Dijkstra.h"
+//#include "algoritmosP2/DijkstraPQ.h"
+#include "algoritmosP2/Dijkstra.h"
+//#include "algoritmosP2/bellmanFord.h"
+//#include "algoritmosP2/floydWarshall.h"
 
 //Ejercicio 2
 
@@ -92,9 +94,11 @@ int main(){
         H.push_back(e4);
     }
     for (int i=0; i < n; i++) {
-        DijkstraPQ::dijkstraPQ(H, (i * 61), n);
-        //Dijkstra::dijkstra(H, (i * 61), n);
+        //DijkstraPQ::dijkstraPQ(H, (i * 61), n);
+        Dijkstra::dijkstra(H, (i * 61), n);
+        //BellmanFord::bellmanFord(H, (i * 61), n);
     }
+    //FloydWarshall::floydWarshall(H, n);
 
 
 return 0;

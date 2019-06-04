@@ -9,7 +9,7 @@
 
 class FloydWarshall {
 public:
-    static int floydWarshall(digraph H, int raiz, int n);
+    static int floydWarshall(digraph H,int n);
 };
 
 

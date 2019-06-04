@@ -13,37 +13,38 @@ const int none = -1;
 using matrix = vector<vector<int> >;
 const int infty = numeric_limits<int>::max() / 2 - 1;
 
-int FloydWarshall::floydWarshall(digraph H, int raiz, int n) {
+int FloydWarshall::floydWarshall(digraph H, int n) {
 
-    //transformacion de aristas a adyacencias
-    int vertices = n*61;
-    matrix D(vertices, vector<int>(vertices, infty));  //Matriz de pesos
-    matrix P(vertices, vector<int>(vertices, none));   //Matriz de caminos
-    for(int i = 0; i < H.size(); ++i) {
-        if (H[i].from == raiz){
-            D[raiz][H[i].weight] = H[i].to;
-            P[raiz][H[i].weight] = raiz;
-        }
+    matrix D(n*61, vector<int>(n*61, infty));  //Matriz de pesos
+    for(int i = 0; i<H.size(); i++) {
+        D[H[i].from][H[i].to] = H[i].weight;
     }
-    for(int v = 0; v < n; ++v) {D[v][v] = 0; P[v][v] = v;}
+    for(int v = 0; v < n*61; ++v) {
+        D[v][v] = 0;
+    }
 
-    //Algoritmo de Floyd-Warshall
     bool c = false;                      //Existe ciclo negativo
-    for(int k = 0; k < n and not c; ++k) for(int i = 0; i < n and not c; ++i) {
-            for(int j = 0; j < n; ++j) if(D[i][j] > D[i][k] + D[k][j]) {
+    for(int k = 0; k < n*61 and not c; ++k) {
+        for (int i = 0; i < n*61 and not c; ++i) {
+            for (int j = 0; j < n*61; ++j) {
+                if (D[i][j] > D[i][k] + D[k][j]) {
                     D[i][j] = D[i][k] + D[k][j];
-                    P[i][j] = P[k][j];
                 }
-            c = D[i][i] < 0;
-    }
-
-    for(int i = 0; i < n; ++i) {
-        for(int j = 0; j < n; ++j) {
-            if (i*61 != raiz){
-                cout << raiz/61 << "," << P[i*61][j]<< ","<< D[i*61][j] ;
-                cout << endl;
+                c = D[i][i] < 0;
             }
         }
     }
+
+    if(c) cout << "Ciclo negativo detectado" << endl;
+    for(int i=0; i < n*61 ; i+=61) {
+        for(int j = 0; j < n*61 ; j+=61){
+            if (i != j){
+                cout << i/61 << "," << j/61 << "," << D[i][j] << endl;
+            }
+        }
+    }
+
     return 0;
 }
+
+
