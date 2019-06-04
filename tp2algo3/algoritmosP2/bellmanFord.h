@@ -6,6 +6,8 @@
 #define TP2_ALGO3_BELLMANFORD_H
 
 
+#include "../digraph/digraph.h"
+
 class BellmanFord {
 public:
     static int bellmanFord(digraph H, int raiz, int n);

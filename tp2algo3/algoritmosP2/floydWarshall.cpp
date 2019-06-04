@@ -9,11 +9,12 @@
 #include <iomanip>
 
 using namespace std;
+const int none = -1;
+using matrix = vector<vector<int> >;
+const int infty = numeric_limits<int>::max() / 2 - 1;
 
 int FloydWarshall::floydWarshall(digraph H, int raiz, int n) {
-    const int none = -1;
-    using matrix = vector<vector<int>>;
-    const int infty = numeric_limits<int>::max() / 2 - 1; 
+
     //transformacion de aristas a adyacencias
     int vertices = n*61;
     matrix D(vertices, vector<int>(vertices, infty));  //Matriz de pesos
@@ -34,16 +35,15 @@ int FloydWarshall::floydWarshall(digraph H, int raiz, int n) {
                     P[i][j] = P[k][j];
                 }
             c = D[i][i] < 0;
-        }
+    }
 
     for(int i = 0; i < n; ++i) {
         for(int j = 0; j < n; ++j) {
             if (i*61 != raiz){
-                cout << raiz/61 << "," << P[i*61][j]<< ","<< D[i*61][j] ; 
+                cout << raiz/61 << "," << P[i*61][j]<< ","<< D[i*61][j] ;
                 cout << endl;
             }
         }
-    }
     }
     return 0;
 }

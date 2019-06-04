@@ -9,17 +9,18 @@
 
 using namespace std;
 
+using neigh = pair<int, int>;         ////vecino, costo
+using graph = vector<vector<neigh>>;
+
+const int infty = numeric_limits<int>::max() / 2 - 1;
+const int none = -1;
+
+int cost(neigh x) {return x.second;}
+int to(neigh x) {return x.first;}
+
 int BellmanFord::bellmanFord(digraph H, int raiz, int n) {
-    using neigh = pair<int, int>;         ////vecino, costo
-    using graph = vector<vector<neigh>>;
-    int vertice = n*61
 
-    const int infty = numeric_limits<int>::max() / 2 - 1;
-    const int none = -1;
-
-    int cost(neigh x) {return x.second;}
-    int to(neigh x) {return x.first;}
-
+    int vertice = n*61;
     //transformacion de aristas a adyacencias
     graph G(n);
     for(int i = 0; i < H.size(); ++i) {
@@ -29,7 +30,7 @@ int BellmanFord::bellmanFord(digraph H, int raiz, int n) {
     }
 
     //algoritmo de Bellman-Ford
-    vector<int> D(vertices, infty), T(vertices, none), M(vertices, false);
+    vector<int> D(vertice, infty), T(vertice, none), M(vertice, false);
     D[raiz] = 0; bool changed = M[raiz] = true;
     for(int i = 0; i <= n and changed; ++i) {
         changed = false;

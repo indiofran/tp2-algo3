@@ -5,6 +5,7 @@
 #ifndef TP2_ALGO3_FLOYDWARSHALL_H
 #define TP2_ALGO3_FLOYDWARSHALL_H
 
+#include "../digraph/digraph.h"
 
 class FloydWarshall {
 public:
