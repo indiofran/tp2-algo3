@@ -11,13 +11,13 @@
 #include <cstring>
 #include <random>
 //#include "algoritmosP2/DijkstraPQ.h"
-#include "algoritmosP2/Dijkstra.h"
+//#include "algoritmosP2/Dijkstra.h"
 //#include "algoritmosP2/bellmanFord.h"
-//#include "algoritmosP2/floydWarshall.h"
+#include "algoritmosP2/floydWarshall.h"
 
 //Ejercicio 2
 
-//ARREGLAR
+
 int main(){
 
     //Cantidad de ciudades y rutas
@@ -27,14 +27,14 @@ int main(){
     digraph H;
     vector<int> prices;
 
-//Costos
+    //Costos
     for(int i = 0; i < n; ++i){
         int c;
         cin >> c;
         prices.push_back(c);
     }
 
-//Grafo
+    //Grafo
     for(int i = 0; i < m; ++i){
         int weight,from,to;
         //cin >> to >> from >> weight;
@@ -95,10 +95,10 @@ int main(){
     }
     for (int i=0; i < n; i++) {
         //DijkstraPQ::dijkstraPQ(H, (i * 61), n);
-        Dijkstra::dijkstra(H, (i * 61), n);
+        //Dijkstra::dijkstra(H, (i * 61), n);
         //BellmanFord::bellmanFord(H, (i * 61), n);
     }
-    //FloydWarshall::floydWarshall(H, n);
+    FloydWarshall::floydWarshall(H, n);
 
 
 return 0;

@@ -18,7 +18,7 @@ const int none = -1;
 //int cost(neigh x) {return x.second;}
 //int to(neigh x) {return x.first;}
 
-int BellmanFord::bellmanFord(digraph H, int raiz, int n) {
+void BellmanFord::bellmanFord(digraph H, int raiz, int n) {
 
     //Lista de sucesores
     //adjacency_list G(n*61);
@@ -57,5 +57,42 @@ int BellmanFord::bellmanFord(digraph H, int raiz, int n) {
             }
         }
     }
-    return 0;
+
+    return ;
+}
+
+
+
+//Para testing
+
+
+vector<int> BellmanFord::bellmanFord_forTesting(digraph H, int raiz, int n) {
+
+    vector<int> D(n*61, infty),  M(n*61, false);
+
+    D[raiz] = 0;
+
+    bool changed = M[raiz] = true;
+
+    for(int i = 0; i <= n*61 and changed; ++i) {
+        changed = false;
+
+        for(int j=0 ; j<H.size();j++){
+
+            M[H[j].from] = false;
+
+            if (D[H[j].from] + H[j].weight < D[H[j].to]) {
+                M[H[j].to] = changed = true;
+                D[H[j].to] = D[H[j].from] + H[j].weight;
+            }
+        }
+    }
+
+    vector<int> v;
+    for(int i = 0; i<n; i++){
+        if (i*61 != raiz) {
+            v.push_back(D[i*61]);
+        }
+    }
+    return v;
 }

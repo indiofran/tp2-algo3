@@ -4,13 +4,14 @@
 
 #ifndef TP2_ALGO3_DIJKSTRA_H
 #define TP2_ALGO3_DIJKSTRA_H
-#include "../digraph/digraph.h"
+#include "bellmanFord.h"
 
 
 class Dijkstra {
 
 public:
-    static int dijkstra(digraph H, int raiz, int n);
+    static void dijkstra(digraph H, int raiz, int n);
+    static vector<int> dijkstra_forTesting(digraph H, int raiz, int n);
 
 };
 

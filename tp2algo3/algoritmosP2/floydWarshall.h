@@ -4,12 +4,12 @@
 
 #ifndef TP2_ALGO3_FLOYDWARSHALL_H
 #define TP2_ALGO3_FLOYDWARSHALL_H
-
-#include "../digraph/digraph.h"
+#include "DijkstraPQ.h"
 
 class FloydWarshall {
 public:
-    static int floydWarshall(digraph H,int n);
+    static void floydWarshall(digraph H,int n);
+    static vector<int> floydWarshall_forTesting(digraph H,int n);
 };
 
 

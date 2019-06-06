@@ -4,14 +4,14 @@
 
 #ifndef TP2_ALGO3_DIJKSTRAPQ_H
 #define TP2_ALGO3_DIJKSTRAPQ_H
-#include "../digraph/digraph.h"
+#include "Dijkstra.h"
 
 class DijkstraPQ {
 
 public:
 
-    static int dijkstraPQ(digraph H, int raiz, int n);
-
+    static void dijkstraPQ(digraph H, int raiz, int n);
+    static vector<int> dijkstraPQ_forTesting(digraph H, int raiz, int n);
 };
 
 

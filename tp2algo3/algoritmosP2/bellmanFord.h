@@ -10,7 +10,8 @@
 
 class BellmanFord {
 public:
-    static int bellmanFord(digraph H, int raiz, int n);
+    static void bellmanFord(digraph H, int raiz, int n);
+    static vector<int> bellmanFord_forTesting(digraph H, int raiz, int n);
 };
 
 
