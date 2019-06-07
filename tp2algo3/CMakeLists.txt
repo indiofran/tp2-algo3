@@ -14,6 +14,9 @@ add_executable(correrTests tests/conjunto-tests.cpp algoritmosP2/floydWarshall.h
         algoritmosP2/bellmanFord.h algoritmosP2/bellmanFord.cpp
         graph/graph.h graph/graph.cpp digraph/digraph.h digraph/digraph.cpp)
 
+add_executable(experimentacion2 tests/experimentacion2.cpp algoritmosP2/floydWarshall.h algoritmosP2/floydWarshall.cpp algoritmosP2/Dijkstra.h algoritmosP2/Dijkstra.cpp algoritmosP2/DijkstraPQ.h algoritmosP2/DijkstraPQ.cpp
+        algoritmosP2/bellmanFord.h algoritmosP2/bellmanFord.cpp
+        graph/graph.h graph/graph.cpp digraph/digraph.h digraph/digraph.cpp)
 
 # Necesitamos asociar los archivos del framework de testing
 target_link_libraries(correrTests gtest gtest_main)
