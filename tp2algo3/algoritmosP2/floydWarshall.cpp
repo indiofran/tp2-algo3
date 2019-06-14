@@ -17,7 +17,9 @@ void FloydWarshall::floydWarshall(digraph H, int n) {
 
     matrix D(n*61, vector<int>(n*61, infty));  //Matriz de pesos
     for(int i = 0; i<H.size(); i++) {
-        D[H[i].from][H[i].to] = H[i].weight;
+        for(int j=0; j<H[i].size(); j++) {
+            D[i][H[i][j].to] = H[i][j].weight;
+        }
     }
     for(int v = 0; v < n*61; ++v) {
         D[v][v] = 0;
@@ -52,7 +54,9 @@ vector<int> FloydWarshall::floydWarshall_forTesting(digraph H, int n) {
 
     matrix D(n*61, vector<int>(n*61, infty));  //Matriz de pesos
     for(int i = 0; i<H.size(); i++) {
-        D[H[i].from][H[i].to] = H[i].weight;
+        for(int j=0; j<H[i].size(); j++) {
+            D[i][H[i][j].to] = H[i][j].weight;
+        }
     }
     for(int v = 0; v < n*61; ++v) {
         D[v][v] = 0;

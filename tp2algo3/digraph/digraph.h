@@ -15,7 +15,7 @@ typedef int node;
 
 struct directed_edge
 {
-    node from;
+    //node from;
     node to;
     int weight;
 
@@ -23,4 +23,4 @@ struct directed_edge
     bool operator==(const directed_edge& a);
 };
 
-typedef vector<directed_edge> digraph;
+typedef vector<vector<directed_edge> > digraph;

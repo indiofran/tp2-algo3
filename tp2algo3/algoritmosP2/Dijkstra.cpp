@@ -18,10 +18,8 @@ void Dijkstra::dijkstra(digraph H, int raiz, int n) {
     vector<int> D(vertices, none);
     D[raiz] = 0;
     vector<bridge> S;
-    for(int i = 0; i<H.size(); i++){
-        if (H[i].from == raiz){
-            S.push_back({H[i].weight, raiz, H[i].to});
-        }
+    for(int i = 0; i<H[raiz].size(); i++){
+        S.push_back({H[raiz][i].weight, raiz, H[raiz][i].to});
     }
     while(not S.empty()){
         int weight, from, to;
@@ -39,19 +37,11 @@ void Dijkstra::dijkstra(digraph H, int raiz, int n) {
         if(D[to] == none){
             D[to] = weight;
 
-            for(int j = 0; j<H.size(); j++){
-                if (H[j].from == to){
-                    if(D[H[j].to] == none){
-                        S.push_back({weight+H[j].weight, to, H[j].to});
-                    }
+            for(int j = 0; j<H[to].size(); j++){
+                if(D[H[to][j].to] == none){
+                    S.push_back({weight+H[to][j].weight, to, H[to][j].to});
                 }
             }
-        }
-    }
-
-    for(int i = 0; i<n; i++){
-        if (i*61 != raiz) {
-            cout << raiz/61 << "," << i << "," << D[i*61] << endl;
         }
     }
 
@@ -66,10 +56,8 @@ vector<int> Dijkstra::dijkstra_forTesting(digraph H, int raiz, int n) {
     vector<int> D(vertices, none);
     D[raiz] = 0;
     vector<bridge> S;
-    for(int i = 0; i<H.size(); i++){
-        if (H[i].from == raiz){
-            S.push_back({H[i].weight, raiz, H[i].to});
-        }
+    for(int i = 0; i<H[raiz].size(); i++){
+        S.push_back({H[raiz][i].weight, raiz, H[raiz][i].to});
     }
     while(not S.empty()){
         int weight, from, to;
@@ -87,11 +75,9 @@ vector<int> Dijkstra::dijkstra_forTesting(digraph H, int raiz, int n) {
         if(D[to] == none){
             D[to] = weight;
 
-            for(int j = 0; j<H.size(); j++){
-                if (H[j].from == to){
-                    if(D[H[j].to] == none){
-                        S.push_back({weight+H[j].weight, to, H[j].to});
-                    }
+            for(int j = 0; j<H[to].size(); j++){
+                if(D[H[to][j].to] == none){
+                    S.push_back({weight+H[to][j].weight, to, H[to][j].to});
                 }
             }
         }

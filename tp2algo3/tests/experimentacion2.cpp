@@ -12,14 +12,14 @@
 
 TEST(text_all,random){
 
-        for (int n = 2; n < 11; n++) {
+        for (int n = 2; n < 5; n++) {
 
             double tiempoDijkstraPQ = 0.0;
             double tiempoDijkstra = 0.0;
             double tiempoBellmanFord = 0.0;
             double tiempoFloydWarshall = 0.0;
 
-            for(int k=0; k<50; k++) {
+            for(int k=0; k<10; k++) {
 
                 std::random_device generator;
 
@@ -39,7 +39,7 @@ TEST(text_all,random){
                 int m = aristas.size();
 
                 //Lista de Aristas
-                digraph H;
+                digraph H(n*61);
                 vector<int> prices;
 
                 //Costos
@@ -49,102 +49,78 @@ TEST(text_all,random){
                 }
 
                 //Grafo
-                for (int i = 0; i < m; ++i) {
-                    int weight = distribution(generator);
+                for(int i = 0; i < m; ++i){
+                    //cin >> to >> from >> weight;
                     int from = aristas[i].first;
                     int to = aristas[i].second;
-
-                    for (int j = 0; j < 60; j++) {  //falta el caso j=60
+                    int weight = distribution(generator);
+                    for (int j = 0; j<60; j++) {  //falta el caso j=60
                         directed_edge e1;
-                        e1.from = (from * 61) + j;
+                        int nodeFrom1 = (from*61)+j;
                         int subindiceTo = j - weight;
-                        if (subindiceTo < 0) {
+                        if (subindiceTo<0){
                             subindiceTo = 0;
                         }
                         int localPrice1 = prices[from];
                         int edgeValue = j - weight;
-                        if (edgeValue < 0) {
+                        if (edgeValue<0){
                             edgeValue = -edgeValue;
                         } else {
                             edgeValue = 0;
                         }
-                        while (j + edgeValue <= 60) {
-                            e1.to = (to * 61) + subindiceTo;
+                        while(j+edgeValue <= 60) {
+                            e1.to = (to*61)+subindiceTo;
                             e1.weight = edgeValue * localPrice1;
-                            H.push_back(e1);
+                            H[nodeFrom1].push_back(e1);
                             subindiceTo++;
                             edgeValue++;
                         }
-                        directed_edge e2;
-                        e2.from = (to * 61) + j;
+                        directed_edge e2; //tengo que hacer lo mismo pero del vertice to al vertice from con el valor de la nafta de to
+                        int nodeFrom2 = (to*61)+j;
                         subindiceTo = j - weight;
-                        if (subindiceTo < 0) {
+                        if (subindiceTo<0){
                             subindiceTo = 0;
                         }
                         int localPrice2 = prices[to];
                         edgeValue = j - weight;
-                        if (edgeValue < 0) {
+                        if (edgeValue<0){
                             edgeValue = -edgeValue;
                         } else {
                             edgeValue = 0;
                         }
-                        while (j + edgeValue <= 60) {
-                            e2.to = (from * 61) + subindiceTo;
+                        while(j+edgeValue <= 60) {
+                            e2.to = (from*61)+subindiceTo;
                             e2.weight = edgeValue * localPrice2;
-                            H.push_back(e2);
+                            H[nodeFrom2].push_back(e2);
                             subindiceTo++;
                             edgeValue++;
                         }
                     }
 //j=60
                     directed_edge e3;
-                    e3.from = (from * 61) + 60;
-                    e3.to = (to * 61) + (60 - weight);
+                    int nodeFrom3 = (from*61)+60;
+                    e3.to = (to*61)+(60-weight);
                     e3.weight = 0;
-                    H.push_back(e3);
+                    H[nodeFrom3].push_back(e3);
                     directed_edge e4;
-                    e4.from = (to * 61) + 60;
-                    e4.to = (from * 61) + (60 - weight);
+                    int nodeFrom4 = (to*61)+60;
+                    e4.to = (from*61)+(60-weight);
                     e4.weight = 0;
-                    H.push_back(e4);
+                    H[nodeFrom4].push_back(e4);
                 }
 
                 auto tiempo_inicio = chrono::steady_clock::now();
                 for (int i = 0; i < n; i++) {
-                    DijkstraPQ::dijkstraPQ(H, (i * 61), n);
-                }
-                auto tiempo_fin = chrono::steady_clock::now();
-                tiempoDijkstraPQ += chrono::duration<double, milli>(tiempo_fin - tiempo_inicio).count();
-
-                tiempo_inicio = chrono::steady_clock::now();
-                for (int i = 0; i < n; i++) {
                     Dijkstra::dijkstra(H, (i * 61), n);
                 }
-                tiempo_fin = chrono::steady_clock::now();
+                auto tiempo_fin = chrono::steady_clock::now();
                 tiempoDijkstra += chrono::duration<double, milli>(tiempo_fin - tiempo_inicio).count();
 
-                tiempo_inicio = chrono::steady_clock::now();
-                for (int i = 0; i < n; i++) {
-                    BellmanFord::bellmanFord(H, (i * 61), n);
-                }
-                tiempo_fin = chrono::steady_clock::now();
-                tiempoBellmanFord += chrono::duration<double, milli>(tiempo_fin - tiempo_inicio).count();
-
-                tiempo_inicio = chrono::steady_clock::now();
-                FloydWarshall::floydWarshall(H, n);
-                tiempo_fin = chrono::steady_clock::now();
-                tiempoFloydWarshall += chrono::duration<double, milli>(tiempo_fin - tiempo_inicio).count();
             }
 
-            tiempoDijkstraPQ = tiempoDijkstraPQ / 50;
-            tiempoDijkstra = tiempoDijkstra / 50;
-            tiempoBellmanFord = tiempoBellmanFord / 50;
-            tiempoFloydWarshall = tiempoFloydWarshall / 50;
+            tiempoDijkstra = tiempoDijkstra / 10;
 
-            cout << n << "," << tiempoDijkstraPQ << endl;
             cout << n << "," << tiempoDijkstra << endl;
-            cout << n << "," << tiempoBellmanFord << endl;
-            cout << n << "," << tiempoFloydWarshall << endl;
 
         }
 }

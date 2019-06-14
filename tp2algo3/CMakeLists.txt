@@ -29,6 +29,12 @@ add_custom_target(correrValgrind
         valgrind --leak-check=full -v ./correrTests 2>&1
         DEPENDS correrTests)
 
+# Necesitamos asociar los archivos del framework de testing
+target_link_libraries(experimentacion2 gtest gtest_main)
+
+# Test suites a ejecutar
+add_test(experimentacion2 conjunto_test)
+
 
 
 add_executable(segmentationIsMyFault main.cpp disjoint_set/disjoint_set_array.cpp disjoint_set/disjoint_set_array.hpp disjoint_set/disjoint_set_tree.cpp

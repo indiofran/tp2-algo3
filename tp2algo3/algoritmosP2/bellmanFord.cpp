@@ -36,15 +36,17 @@ void BellmanFord::bellmanFord(digraph H, int raiz, int n) {
     for(int i = 0; i <= n*61 and changed; ++i) {
         changed = false;
 
-            for(int j=0 ; j<H.size();j++){
+        for(int j=0 ; j<H.size();j++){
 
-                M[H[j].from] = false;
+            M[j] = false;
+            for(int k=0; k<H[j].size(); k++) {
 
-                if (D[H[j].from] + H[j].weight < D[H[j].to]) {
-                    M[H[j].to] = changed = true;
-                    D[H[j].to] = D[H[j].from] + H[j].weight;
+                if (D[j] + H[j][k].weight < D[H[j][k].to]) {
+                    M[H[j][k].to] = changed = true;
+                    D[H[j][k].to] = D[j] + H[j][k].weight;
                 }
             }
+        }
     }
 
 
@@ -79,11 +81,13 @@ vector<int> BellmanFord::bellmanFord_forTesting(digraph H, int raiz, int n) {
 
         for(int j=0 ; j<H.size();j++){
 
-            M[H[j].from] = false;
+            M[j] = false;
+            for(int k=0; k<H[j].size(); k++) {
 
-            if (D[H[j].from] + H[j].weight < D[H[j].to]) {
-                M[H[j].to] = changed = true;
-                D[H[j].to] = D[H[j].from] + H[j].weight;
+                if (D[j] + H[j][k].weight < D[H[j][k].to]) {
+                    M[H[j][k].to] = changed = true;
+                    D[H[j][k].to] = D[j] + H[j][k].weight;
+                }
             }
         }
     }

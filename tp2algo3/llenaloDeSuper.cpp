@@ -24,7 +24,7 @@ int main(){
     int n,m; cin >> n >> m;
 
     //Lista de Aristas
-    digraph H;
+    digraph H(n*61);
     vector<int> prices;
 
     //Costos
@@ -41,7 +41,7 @@ int main(){
         cin >> from >> to >> weight; //cual va?
         for (int j = 0; j<60; j++) {  //falta el caso j=60
             directed_edge e1;
-            e1.from = (from*61)+j;
+            int nodeFrom1 = (from*61)+j;
             int subindiceTo = j - weight;
             if (subindiceTo<0){
                 subindiceTo = 0;
@@ -56,12 +56,12 @@ int main(){
             while(j+edgeValue <= 60) {
                 e1.to = (to*61)+subindiceTo;
                 e1.weight = edgeValue * localPrice1;
-                H.push_back(e1);
+                H[nodeFrom1].push_back(e1);
                 subindiceTo++;
                 edgeValue++;
             }
             directed_edge e2; //tengo que hacer lo mismo pero del vertice to al vertice from con el valor de la nafta de to
-            e2.from = (to*61)+j;
+            int nodeFrom2 = (to*61)+j;
             subindiceTo = j - weight;
             if (subindiceTo<0){
                 subindiceTo = 0;
@@ -76,29 +76,34 @@ int main(){
             while(j+edgeValue <= 60) {
                 e2.to = (from*61)+subindiceTo;
                 e2.weight = edgeValue * localPrice2;
-                H.push_back(e2);
+                H[nodeFrom2].push_back(e2);
                 subindiceTo++;
                 edgeValue++;
             }
         }
 //j=60
         directed_edge e3;
-        e3.from = (from*61)+60;
+        int nodeFrom3 = (from*61)+60;
         e3.to = (to*61)+(60-weight);
         e3.weight = 0;
-        H.push_back(e3);
+        H[nodeFrom3].push_back(e3);
         directed_edge e4;
-        e4.from = (to*61)+60;
+        int nodeFrom4 = (to*61)+60;
         e4.to = (from*61)+(60-weight);
         e4.weight = 0;
-        H.push_back(e4);
+        H[nodeFrom4].push_back(e4);
     }
+
+    //for (int i=0; i < n; i++) {
+    //    DijkstraPQ::dijkstraPQ(H, (i * 61), n);
+    //}
     for (int i=0; i < n; i++) {
-        //DijkstraPQ::dijkstraPQ(H, (i * 61), n);
-        //Dijkstra::dijkstra(H, (i * 61), n);
-        //BellmanFord::bellmanFord(H, (i * 61), n);
+        Dijkstra::dijkstra(H, (i * 61), n);
     }
-    FloydWarshall::floydWarshall(H, n);
+    //for (int i=0; i < n; i++) {
+    //    BellmanFord::bellmanFord(H, (i * 61), n);
+    //}
+    //FloydWarshall::floydWarshall(H, n);
 
 
 return 0;

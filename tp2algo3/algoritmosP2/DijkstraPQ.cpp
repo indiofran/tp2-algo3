@@ -18,10 +18,8 @@ void DijkstraPQ::dijkstraPQ (digraph H, int raiz, int n) {
     vector<int> D(vertices, none);
     D[raiz] = 0;
     priority_queue<bridge> S;
-    for(int i = 0; i<H.size(); i++){
-        if (H[i].from == raiz){
-            S.push({-H[i].weight, raiz, H[i].to});
-        }
+    for(int i = 0; i<H[raiz].size(); i++){
+        S.push({-H[raiz][i].weight, raiz, H[raiz][i].to});
     }
     while(not S.empty()){
         int weight, from, to;
@@ -30,11 +28,9 @@ void DijkstraPQ::dijkstraPQ (digraph H, int raiz, int n) {
 
         if(D[to] == none){
             D[to] = -weight;
-            for(int j = 0; j<H.size(); j++){
-                if (H[j].from == to){
-                    if(D[H[j].to] == none){
-                        S.push({weight-H[j].weight, to, H[j].to});
-                    }
+            for(int j = 0; j<H[to].size(); j++){
+                if(D[H[to][j].to] == none){
+                    S.push({weight-H[to][j].weight, to, H[to][j].to});
                 }
             }
         }
@@ -58,10 +54,8 @@ vector<int> DijkstraPQ::dijkstraPQ_forTesting(digraph H, int raiz, int n) {
     vector<int> D(vertices, none);
     D[raiz] = 0;
     priority_queue<bridge> S;
-    for(int i = 0; i<H.size(); i++){
-        if (H[i].from == raiz){
-            S.push({-H[i].weight, raiz, H[i].to});
-        }
+    for(int i = 0; i<H[raiz].size(); i++){
+        S.push({-H[raiz][i].weight, raiz, H[raiz][i].to});
     }
     while(not S.empty()){
         int weight, from, to;
@@ -70,11 +64,9 @@ vector<int> DijkstraPQ::dijkstraPQ_forTesting(digraph H, int raiz, int n) {
 
         if(D[to] == none){
             D[to] = -weight;
-            for(int j = 0; j<H.size(); j++){
-                if (H[j].from == to){
-                    if(D[H[j].to] == none){
-                        S.push({weight-H[j].weight, to, H[j].to});
-                    }
+            for(int j = 0; j<H[to].size(); j++){
+                if(D[H[to][j].to] == none){
+                    S.push({weight-H[to][j].weight, to, H[to][j].to});
                 }
             }
         }
