@@ -59,8 +59,6 @@ void BellmanFord::bellmanFord(digraph H, int raiz, int n) {
             }
         }
     }
-
-    return ;
 }
 
 
@@ -99,4 +97,36 @@ vector<int> BellmanFord::bellmanFord_forTesting(digraph H, int raiz, int n) {
         }
     }
     return v;
+}
+
+void BellmanFord::bellmanFordForTime(digraph H, int raiz, int n) {
+
+    //Lista de sucesores
+    //adjacency_list G(n*61);
+
+    // for(int i = 0; i < H.size(); ++i) {
+    // G[H[i].from].push_back({H[i].to,H[i].weight});
+    // }
+
+    vector<int> D(n*61, infty),  M(n*61, false);
+
+    D[raiz] = 0;
+
+    bool changed = M[raiz] = true;
+
+    for(int i = 0; i <= n*61 and changed; ++i) {
+        changed = false;
+
+        for(int j=0 ; j<H.size();j++){
+
+            M[j] = false;
+            for(int k=0; k<H[j].size(); k++) {
+
+                if (D[j] + H[j][k].weight < D[H[j][k].to]) {
+                    M[H[j][k].to] = changed = true;
+                    D[H[j][k].to] = D[j] + H[j][k].weight;
+                }
+            }
+        }
+    }
 }

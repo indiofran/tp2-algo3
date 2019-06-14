@@ -45,8 +45,6 @@ void FloydWarshall::floydWarshall(digraph H, int n) {
             }
         }
     }
-
-    return;
 }
 
 
@@ -83,6 +81,31 @@ vector<int> FloydWarshall::floydWarshall_forTesting(digraph H, int n) {
         }
     }
     return v;
+}
+
+void FloydWarshall::floydWarshallForTime(digraph H, int n) {
+
+    matrix D(n*61, vector<int>(n*61, infty));  //Matriz de pesos
+    for(int i = 0; i<H.size(); i++) {
+        for(int j=0; j<H[i].size(); j++) {
+            D[i][H[i][j].to] = H[i][j].weight;
+        }
+    }
+    for(int v = 0; v < n*61; ++v) {
+        D[v][v] = 0;
+    }
+
+    bool c = false;                      //Existe ciclo negativo
+    for(int k = 0; k < n*61 and not c; ++k) {
+        for (int i = 0; i < n*61 and not c; ++i) {
+            for (int j = 0; j < n*61; ++j) {
+                if (D[i][j] > D[i][k] + D[k][j]) {
+                    D[i][j] = D[i][k] + D[k][j];
+                }
+                c = D[i][i] < 0;
+            }
+        }
+    }
 }
 
 

@@ -12,6 +12,7 @@ class Dijkstra {
 public:
     static void dijkstra(digraph H, int raiz, int n);
     static vector<int> dijkstra_forTesting(digraph H, int raiz, int n);
+    static void dijkstraForTime(digraph H, int raiz, int n);
 
 };
 

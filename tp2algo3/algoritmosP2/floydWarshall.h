@@ -10,6 +10,7 @@ class FloydWarshall {
 public:
     static void floydWarshall(digraph H,int n);
     static vector<int> floydWarshall_forTesting(digraph H,int n);
+    static void floydWarshallForTime(digraph H,int n);
 };
 
 

@@ -12,14 +12,14 @@
 
 TEST(text_all,random){
 
-        for (int n = 2; n < 5; n++) {
+        for (int n = 2; n < 11; n++) {
 
             double tiempoDijkstraPQ = 0.0;
             double tiempoDijkstra = 0.0;
             double tiempoBellmanFord = 0.0;
             double tiempoFloydWarshall = 0.0;
 
-            for(int k=0; k<10; k++) {
+            for(int k=0; k<100; k++) {
 
                 std::random_device generator;
 
@@ -111,16 +111,39 @@ TEST(text_all,random){
 
                 auto tiempo_inicio = chrono::steady_clock::now();
                 for (int i = 0; i < n; i++) {
-                    Dijkstra::dijkstra(H, (i * 61), n);
+                    Dijkstra::dijkstraForTime(H, (i * 61), n);
                 }
                 auto tiempo_fin = chrono::steady_clock::now();
                 tiempoDijkstra += chrono::duration<double, milli>(tiempo_fin - tiempo_inicio).count();
+                tiempo_inicio = chrono::steady_clock::now();
+                for (int i = 0; i < n; i++) {
+                    DijkstraPQ::dijkstraPQForTime(H, (i * 61), n);
+                }
+                tiempo_fin = chrono::steady_clock::now();
+                tiempoDijkstraPQ += chrono::duration<double, milli>(tiempo_fin - tiempo_inicio).count();
+                tiempo_inicio = chrono::steady_clock::now();
+                for (int i = 0; i < n; i++) {
+                    BellmanFord::bellmanFordForTime(H, (i * 61), n);
+                }
+                tiempo_fin = chrono::steady_clock::now();
+                tiempoBellmanFord += chrono::duration<double, milli>(tiempo_fin - tiempo_inicio).count();
 
+                tiempo_inicio = chrono::steady_clock::now();
+                FloydWarshall::floydWarshallForTime(H, n);
+                tiempo_fin = chrono::steady_clock::now();
+                tiempoFloydWarshall += chrono::duration<double, milli>(tiempo_fin - tiempo_inicio).count();
             }
 
-            tiempoDijkstra = tiempoDijkstra / 10;
+            tiempoDijkstra = tiempoDijkstra / 100;
+            tiempoDijkstraPQ = tiempoDijkstraPQ / 100;
+            tiempoBellmanFord = tiempoBellmanFord / 100;
+            tiempoFloydWarshall = tiempoFloydWarshall / 100;
+
 
             cout << n << "," << tiempoDijkstra << endl;
+            cout << n << "," << tiempoDijkstraPQ << endl;
+            cout << n << "," << tiempoBellmanFord << endl;
+            cout << n << "," << tiempoFloydWarshall << endl;
 
         }
 }

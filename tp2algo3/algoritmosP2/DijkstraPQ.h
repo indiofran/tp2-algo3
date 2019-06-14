@@ -12,6 +12,7 @@ public:
 
     static void dijkstraPQ(digraph H, int raiz, int n);
     static vector<int> dijkstraPQ_forTesting(digraph H, int raiz, int n);
+    static void dijkstraPQForTime(digraph H, int raiz, int n);
 };
 
 

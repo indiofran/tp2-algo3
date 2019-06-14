@@ -103,7 +103,7 @@ int main(){
     //for (int i=0; i < n; i++) {
     //    BellmanFord::bellmanFord(H, (i * 61), n);
     //}
-    //FloydWarshall::floydWarshall(H, n);
+    FloydWarshall::floydWarshall(H, n);
 
 
 return 0;
