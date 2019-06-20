@@ -2,9 +2,9 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
+      <config projectName="tp2algo3" targetName="segmentationIsMyFault" />
       <config projectName="tp2algo3" targetName="experimentacion2" />
       <config projectName="tp2algo3" targetName="gtest_main" />
-      <config projectName="tp2algo3" targetName="segmentationIsMyFault" />
       <config projectName="tp2algo3" targetName="correrValgrind" />
       <config projectName="tp2algo3" targetName="gtest" />
       <config projectName="tp2algo3" targetName="llenaloDeSuper" />
@@ -18,7 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41cd8269-d835-42da-8a9f-7f96acec4a10" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/src/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/src/tests/google-test/CMakeFiles/" />
@@ -34,11 +34,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+            <state relative-caret-position="225">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -57,6 +66,7 @@
         <option value="$PROJECT_DIR$/tp2algo3/algoritmosP2/DijkstraPQ.h" />
         <option value="$PROJECT_DIR$/tp2algo3/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/tp2algo3/main.cpp" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -89,6 +99,24 @@
             <path>
               <item name="tp2algo3" type="b2602c69:ProjectViewProjectNode" />
               <item name="tp2-algo3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp2algo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp2-algo3" type="462c0819:PsiDirectoryNode" />
+              <item name="exp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp2algo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp2-algo3" type="462c0819:PsiDirectoryNode" />
+              <item name="exp" type="462c0819:PsiDirectoryNode" />
+              <item name="segmentation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp2algo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp2-algo3" type="462c0819:PsiDirectoryNode" />
+              <item name="exp" type="462c0819:PsiDirectoryNode" />
+              <item name="segmentation" type="462c0819:PsiDirectoryNode" />
+              <item name="dragon" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tp2algo3" type="b2602c69:ProjectViewProjectNode" />
@@ -200,6 +228,7 @@
       <workItem from="1560972420294" duration="26000" />
       <workItem from="1561068798099" duration="158000" />
       <workItem from="1561069003235" duration="24000" />
+      <workItem from="1561070543557" duration="462000" />
     </task>
     <task id="LOCAL-00001" summary="- Refactor&#10;- Analisis cuantitativo de la segmentacion">
       <created>1561068926616</created>
@@ -208,16 +237,23 @@
       <option name="project" value="LOCAL" />
       <updated>1561068926616</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Experimentacion segmentacion: dragon_tree">
+      <created>1561070757730</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1561070757730</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2595000" />
+    <option name="totallyTimeSpent" value="3057000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27010623" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27465856" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -244,7 +280,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- Refactor&#10;- Analisis cuantitativo de la segmentacion" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Refactor&#10;- Analisis cuantitativo de la segmentacion" />
+    <MESSAGE value="Experimentacion segmentacion: dragon_tree" />
+    <option name="LAST_COMMIT_MESSAGE" value="Experimentacion segmentacion: dragon_tree" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tp2algo3/algoritmosP2/Dijkstra.cpp" />
@@ -283,13 +320,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        <state relative-caret-position="225">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="41" column="5" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
         </state>
       </provider>
     </entry>
