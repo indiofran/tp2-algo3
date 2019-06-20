@@ -34,7 +34,6 @@
 #By Cisco
 /BSDS300
 
-src/cmake-build-debug
 src/.idea
 .idea
 .vscode
