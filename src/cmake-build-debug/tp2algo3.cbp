@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tp2algo3"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\tests\;CMake Files\tests\google-test\;CMake Files\tests\google-test\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="experimentacion2">
+				<Option output="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/experimentacion2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/src"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 experimentacion2"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="experimentacion2/fast">
+				<Option output="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/experimentacion2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/src"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 experimentacion2/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrValgrind">
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrValgrind"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="segmentationIsMyFault">
+				<Option output="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/segmentationIsMyFault" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/src"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 segmentationIsMyFault"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="segmentationIsMyFault/fast">
+				<Option output="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/segmentationIsMyFault" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/src"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 segmentationIsMyFault/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrTests">
+				<Option output="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/correrTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/src"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrTests"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrTests/fast">
+				<Option output="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/correrTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/src"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrTests/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llenaloDeSuper">
+				<Option output="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/llenaloDeSuper" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/src"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 llenaloDeSuper"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llenaloDeSuper/fast">
+				<Option output="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/llenaloDeSuper" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/src"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 llenaloDeSuper/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/src"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/src"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/src"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/src"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test"/>
+					<Add directory="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="/usr/include/c++/8"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/8"/>
+					<Add directory="/usr/include/c++/8/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/digraph/digraph.cpp">
+			<Option target="experimentacion2"/>
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/digraph/digraph.h">
+			<Option target="experimentacion2"/>
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/graph/graph.cpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/graph/graph.h">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/llenaloDeSuper.cpp">
+			<Option target="llenaloDeSuper"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/min_path/bellman_ford/bellmanFord.cpp">
+			<Option target="experimentacion2"/>
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/min_path/bellman_ford/bellmanFord.h">
+			<Option target="experimentacion2"/>
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/min_path/dijkstra/Dijkstra.cpp">
+			<Option target="experimentacion2"/>
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/min_path/dijkstra/Dijkstra.h">
+			<Option target="experimentacion2"/>
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/min_path/dijskstra_pq/DijkstraPQ.cpp">
+			<Option target="experimentacion2"/>
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/min_path/dijskstra_pq/DijkstraPQ.h">
+			<Option target="experimentacion2"/>
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/min_path/floyd_warshall/floydWarshall.cpp">
+			<Option target="experimentacion2"/>
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/min_path/floyd_warshall/floydWarshall.h">
+			<Option target="experimentacion2"/>
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/segmentation/algorithms/algorithms.cpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/segmentation/algorithms/algorithms.h">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/segmentation/cli/cli.cpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/segmentation/cli/cli.h">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_array.cpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_array.hpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_tree.cpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_tree.hpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_tree_pc.cpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_tree_pc.hpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/segmentation/io/io.cpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/segmentation/io/io.h">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/segmentationIsMyFault.cpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/conjunto-tests.cpp">
+			<Option target="correrTests"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/experimentacion2.cpp">
+			<Option target="experimentacion2"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\google-test\"/>
+		</Unit>
+		<Unit filename="/home/enzo/Documentos/Facultad/AED3/tp2-algo3/src/tests/google-test/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\tests\google-test\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
