@@ -37,3 +37,7 @@
 .vscode
 *.pgm
 *.ppm
+.DS_Store
+/cmake-build-debug
+/.idea
+/BSDS300
