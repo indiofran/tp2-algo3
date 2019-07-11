@@ -1,0 +1,141 @@
+../../img/screws.ascii.pgm | disjoint_set sobre array
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 1000000
+TERMINADA EN: 468646090796 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 304440
+	 - # cluster: 2760
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 500000
+TERMINADA EN: 467188734590 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 304535
+	 - # cluster: 2665
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 250000
+TERMINADA EN: 466563271097 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 304233
+	 - # cluster: 2967
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 125000
+TERMINADA EN: 465485642536 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 303737
+	 - # cluster: 3463
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 62500
+TERMINADA EN: 464596222024 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 303145
+	 - # cluster: 4055
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 31250
+TERMINADA EN: 465044710983 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 303139
+	 - # cluster: 4061
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 15625
+TERMINADA EN: 463668522120 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 302684
+	 - # cluster: 4516
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 7812
+TERMINADA EN: 463018325750 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 302159
+	 - # cluster: 5041
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 3906
+TERMINADA EN: 461958211150 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 301579
+	 - # cluster: 5621
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 1953
+TERMINADA EN: 460619044410 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 300668
+	 - # cluster: 6532
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 976
+TERMINADA EN: 458622666182 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 299448
+	 - # cluster: 7752
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 488
+TERMINADA EN: 455303939471 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 297239
+	 - # cluster: 9961
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 244
+TERMINADA EN: 450470201938 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 293847
+	 - # cluster: 13353
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 122
+TERMINADA EN: 441139009332 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 287843
+	 - # cluster: 19357
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 61
+TERMINADA EN: 425949393548 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 278063
+	 - # cluster: 29137
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 30
+TERMINADA EN: 402997091366 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 262851
+	 - # cluster: 44349
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 15
+TERMINADA EN: 367850489938 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 240070
+	 - # cluster: 67130
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 7
+TERMINADA EN: 308914778591 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 201504
+	 - # cluster: 105696
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 3
+TERMINADA EN: 238799880395 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 155866
+	 - # cluster: 151334
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 1
+TERMINADA EN: 192916714349 ns. en promedio (1 muestras)
+	 - # find: 2450884
+	 - # unite: 125642
+	 - # cluster: 181558

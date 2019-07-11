@@ -1,0 +1,141 @@
+../../img/hands.ascii.pgm | disjoint_set sobre tree
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 1000000
+TERMINADA EN: 604968965 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 305859
+	 - # cluster: 1341
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 500000
+TERMINADA EN: 606581917 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 305697
+	 - # cluster: 1503
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 250000
+TERMINADA EN: 606454944 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 304090
+	 - # cluster: 3110
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 125000
+TERMINADA EN: 611568485 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 303588
+	 - # cluster: 3612
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 62500
+TERMINADA EN: 607946023 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 304043
+	 - # cluster: 3157
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 31250
+TERMINADA EN: 607599826 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 303416
+	 - # cluster: 3784
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 15625
+TERMINADA EN: 607578320 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 302949
+	 - # cluster: 4251
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 7812
+TERMINADA EN: 607554438 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 302749
+	 - # cluster: 4451
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 3906
+TERMINADA EN: 607677872 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 302557
+	 - # cluster: 4643
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 1953
+TERMINADA EN: 607045875 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 302092
+	 - # cluster: 5108
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 976
+TERMINADA EN: 606924204 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 301637
+	 - # cluster: 5563
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 488
+TERMINADA EN: 605702730 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 301051
+	 - # cluster: 6149
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 244
+TERMINADA EN: 604919359 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 299739
+	 - # cluster: 7461
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 122
+TERMINADA EN: 601892961 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 298043
+	 - # cluster: 9157
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 61
+TERMINADA EN: 596751287 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 295254
+	 - # cluster: 11946
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 30
+TERMINADA EN: 599968051 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 291144
+	 - # cluster: 16056
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 15
+TERMINADA EN: 600254790 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 285442
+	 - # cluster: 21758
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 7
+TERMINADA EN: 597388520 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 278386
+	 - # cluster: 28814
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 3
+TERMINADA EN: 619206035 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 271607
+	 - # cluster: 35593
+
+
+SEGMENTACION INICIADA CON: n = 307200, k = 1
+TERMINADA EN: 598140684 ns. en promedio (25 muestras)
+	 - # find: 2450884
+	 - # unite: 266428
+	 - # cluster: 40772

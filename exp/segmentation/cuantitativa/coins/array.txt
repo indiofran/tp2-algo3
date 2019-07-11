@@ -1,0 +1,141 @@
+../../img/coins.ascii.pgm | disjoint_set sobre array
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 1000000
+TERMINADA EN: 27507614123 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 73736
+	 - # cluster: 64
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 500000
+TERMINADA EN: 27527527315 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 73789
+	 - # cluster: 11
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 250000
+TERMINADA EN: 27478537280 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 73787
+	 - # cluster: 13
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 125000
+TERMINADA EN: 27483443771 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 73757
+	 - # cluster: 43
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 62500
+TERMINADA EN: 27355361217 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 73582
+	 - # cluster: 218
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 31250
+TERMINADA EN: 27217730198 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 73354
+	 - # cluster: 446
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 15625
+TERMINADA EN: 27156455552 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 73186
+	 - # cluster: 614
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 7812
+TERMINADA EN: 27076105465 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 72962
+	 - # cluster: 838
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 3906
+TERMINADA EN: 26942898130 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 72829
+	 - # cluster: 971
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 1953
+TERMINADA EN: 26746081073 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 72415
+	 - # cluster: 1385
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 976
+TERMINADA EN: 26672832870 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 72220
+	 - # cluster: 1580
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 488
+TERMINADA EN: 26440905414 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 71629
+	 - # cluster: 2171
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 244
+TERMINADA EN: 26179450294 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 70911
+	 - # cluster: 2889
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 122
+TERMINADA EN: 25792366905 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 69831
+	 - # cluster: 3969
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 61
+TERMINADA EN: 25155541140 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 68088
+	 - # cluster: 5712
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 30
+TERMINADA EN: 24164518113 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 65432
+	 - # cluster: 8368
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 15
+TERMINADA EN: 22763793451 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 61600
+	 - # cluster: 12200
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 7
+TERMINADA EN: 20850796171 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 56367
+	 - # cluster: 17433
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 3
+TERMINADA EN: 18659525930 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 50396
+	 - # cluster: 23404
+
+
+SEGMENTACION INICIADA CON: n = 73800, k = 1
+TERMINADA EN: 16444983385 ns. en promedio (1 muestras)
+	 - # find: 587128
+	 - # unite: 44368
+	 - # cluster: 29432

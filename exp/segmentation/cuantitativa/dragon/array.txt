@@ -1,0 +1,141 @@
+../../img/dragon.ascii.pgm | disjoint_set sobre array
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 1000000
+TERMINADA EN: 238341424637 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 217939
+	 - # cluster: 561
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 500000
+TERMINADA EN: 237986659590 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 218113
+	 - # cluster: 387
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 250000
+TERMINADA EN: 237913943872 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 217652
+	 - # cluster: 848
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 125000
+TERMINADA EN: 237303295740 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 217372
+	 - # cluster: 1128
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 62500
+TERMINADA EN: 237846926326 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 217502
+	 - # cluster: 998
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 31250
+TERMINADA EN: 237330133100 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 217412
+	 - # cluster: 1088
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 15625
+TERMINADA EN: 238307110578 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 217522
+	 - # cluster: 978
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 7812
+TERMINADA EN: 238544837009 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 217680
+	 - # cluster: 820
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 3906
+TERMINADA EN: 238024246925 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 217697
+	 - # cluster: 803
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 1953
+TERMINADA EN: 237706285816 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 217633
+	 - # cluster: 867
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 976
+TERMINADA EN: 237592431290 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 217353
+	 - # cluster: 1147
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 488
+TERMINADA EN: 236801972100 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 216824
+	 - # cluster: 1676
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 244
+TERMINADA EN: 236286354878 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 216044
+	 - # cluster: 2456
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 122
+TERMINADA EN: 234534268348 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 214790
+	 - # cluster: 3710
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 61
+TERMINADA EN: 233377103074 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 213288
+	 - # cluster: 5212
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 30
+TERMINADA EN: 231890737502 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 212040
+	 - # cluster: 6460
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 15
+TERMINADA EN: 231190588937 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 211431
+	 - # cluster: 7069
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 7
+TERMINADA EN: 230542653121 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 211079
+	 - # cluster: 7421
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 3
+TERMINADA EN: 230650628889 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 210911
+	 - # cluster: 7589
+
+
+SEGMENTACION INICIADA CON: n = 218500, k = 1
+TERMINADA EN: 230171398799 ns. en promedio (1 muestras)
+	 - # find: 1742394
+	 - # unite: 210862
+	 - # cluster: 7638
