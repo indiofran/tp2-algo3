@@ -53,7 +53,7 @@ add_executable( segmentationIsMyFault
                 segmentation/disjoint_set/disjoint_set_tree.cpp
                 segmentation/disjoint_set/disjoint_set_tree_pc.cpp
                 segmentation/io/io.cpp
-                graph/graph.cpp )
+                graph/graph.cpp)
 
 add_executable( llenaloDeSuper
                 llenaloDeSuper.cpp

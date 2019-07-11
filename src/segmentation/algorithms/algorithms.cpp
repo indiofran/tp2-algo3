@@ -1,8 +1,8 @@
 #include "algorithms.h"
 
-vector<int> segments_by_min_distance_array(graph& g, int n, int k, long long unsigned int& find_count, long long unsigned int& unite_count, long long unsigned int& cluster_count)
+vector<int> segments_by_min_distance_array(graph& g, int n, int k, long long unsigned int& find_count, long long unsigned int& unite_count)
 {
-    find_count = 0; unite_count = 0; cluster_count = 0;
+    find_count = 0; unite_count = 0;
 
     //Cantidad de aristas
     unsigned int m = g.size();
@@ -55,13 +55,13 @@ vector<int> segments_by_min_distance_array(graph& g, int n, int k, long long uns
     }
 
     vector<int> segmentation = segments.segmentation();
-    cluster_count = segmentation.size();
 
     return segmentation;
 }
 
-vector<int> segments_by_min_distance_tree(graph& g, int n, int k, long long unsigned int& find_count, long long unsigned int& unite_count, long long unsigned int& cluster_count)
+vector<int> segments_by_min_distance_tree(graph& g, int n, int k, long long unsigned int& find_count, long long unsigned int& unite_count)
 {
+    find_count = 0; unite_count = 0;
 
     //Cantidad de aristas
     unsigned int m = g.size();
@@ -113,12 +113,13 @@ vector<int> segments_by_min_distance_tree(graph& g, int n, int k, long long unsi
         }
     }
     vector<int> segmentation = segments.segmentation();
-    cluster_count = segmentation.size();
 
-    return segmentation;}
+    return segmentation;
+}
 
-vector<int> segments_by_min_distance_tree_pc(graph& g, int n, int k, long long unsigned int& find_count, long long unsigned int& unite_count, long long unsigned int& cluster_count)
+vector<int> segments_by_min_distance_tree_pc(graph& g, int n, int k, long long unsigned int& find_count, long long unsigned int& unite_count)
 {
+    find_count = 0; unite_count = 0;
 
     //Cantidad de aristas
     unsigned int m = g.size();
@@ -170,9 +171,38 @@ vector<int> segments_by_min_distance_tree_pc(graph& g, int n, int k, long long u
         }
     }
     vector<int> segmentation = segments.segmentation();
-    cluster_count = segmentation.size();
 
     return segmentation;
 }
 
+map<int,rgb> get_clusters(vector<int>& segments)
+{
+    //Para cada cluster un color
+    map<int,rgb> clusters;
 
+    //Inserto todos los clusters que tengo
+    for (int l = 0; l < segments.size(); ++l)
+    {
+        rgb r;
+        clusters.insert ( std::pair<int,rgb>(segments[l],r) );
+    }
+
+
+    vector<rgb> colors(clusters.size());
+    for (int i = 0; i < colors.size(); i++)
+    {
+        colors[i].cero = rand()%256;
+        colors[i].uno = rand()%256;
+        colors[i].dos = rand()%256;
+    }
+
+    //Le asigno un color a cada cluster
+    int a=0;
+
+    for (auto it=clusters.begin(); it!=clusters.end(); ++it){
+        clusters.at(it->first)=colors[a];
+        a++;
+    }
+
+    return clusters;
+}

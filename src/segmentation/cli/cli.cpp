@@ -157,13 +157,13 @@ vector<int> do_segmentation(graph& G, algo_type algorithm, int n, int k, long lo
     switch (algorithm)
     {
         case algo_type::array:
-            segments = segments_by_min_distance_array(G, n, k, find_count, unite_count, cluster_count);
+            segments = segments_by_min_distance_array(G, n, k, find_count, unite_count);
             break;
         case algo_type::tree:
-            segments = segments_by_min_distance_tree(G, n, k, find_count, unite_count, cluster_count);
+            segments = segments_by_min_distance_tree(G, n, k, find_count, unite_count);
             break;
         case algo_type::tree_pc:
-            segments = segments_by_min_distance_tree_pc(G, n, k, find_count, unite_count, cluster_count);
+            segments = segments_by_min_distance_tree_pc(G, n, k, find_count, unite_count);
             break;
         default:
             break;
@@ -174,7 +174,8 @@ vector<int> do_segmentation(graph& G, algo_type algorithm, int n, int k, long lo
 
 vector<int> do_segmentation_and_bench(graph& G, algo_type algorithm, int n, int k, long long unsigned int& find_count, long long unsigned int& unite_count, long long unsigned int& cluster_count)
 {
-    int samples_count = 100;
+    int SAMPLES_COUNT = 1;
+
     vector<int> segmentation;
     chrono::high_resolution_clock::time_point begin, end;
     chrono::nanoseconds delta;
@@ -183,7 +184,7 @@ vector<int> do_segmentation_and_bench(graph& G, algo_type algorithm, int n, int 
     cout << endl;
     cout << "SEGMENTACION INICIADA CON: n = " << n << ", k = " << k << endl;
 
-    for (int i = 0; i < samples_count; i++)
+    for (int i = 0; i < SAMPLES_COUNT; i++)
     {
         begin = chrono::high_resolution_clock::now();
         segmentation = do_segmentation(G, algorithm, n, k, find_count, unite_count, cluster_count);
@@ -194,10 +195,10 @@ vector<int> do_segmentation_and_bench(graph& G, algo_type algorithm, int n, int 
 
     long long unsigned int avg = average(deltas);
 
-    cout << "TERMINADA EN: " << avg << " ns. en promedio (" << samples_count << " muestras)" << endl;
+    cout << "TERMINADA EN: " << avg << " ns. en promedio (" << SAMPLES_COUNT << " muestras)" << endl;
     cout << "\t - # find: " << find_count << endl;
     cout << "\t - # unite: " << unite_count << endl;
-    cout << "\t - # cluster: " << cluster_count << endl;
+    cout << "\t - # cluster: " << get_clusters(segmentation).size() << endl;
     cout << endl;
 
     return segmentation;

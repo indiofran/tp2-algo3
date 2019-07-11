@@ -81,42 +81,17 @@ vector<vector<int>> read_stdio()
 }
 
 
-void write_path(vector<vector<int>> imagen, vector<int> segments, int k)
+void write_path(vector<vector<int>>& imagen, vector<int>& segments, int k)
 {
     int h = imagen.size();
     int w = imagen[0].size();
 
-    //Para cada cluster un color
-    map<int,rgb> clusters;
-
-    //Inserto todos los clusters que tengo
-    for (int l = 0; l < segments.size(); ++l)
-    {
-        rgb r;
-        clusters.insert ( std::pair<int,rgb>(segments[l],r) );
-    }
-
-
-    vector<rgb> colors(clusters.size());
-    for (int i = 0; i < colors.size(); i++)
-    {
-        colors[i].cero = rand()%256;
-        colors[i].uno = rand()%256;
-        colors[i].dos = rand()%256;
-    }
-
-    //Le asigno un color a cada cluster
-    int a=0;
-
-    for (auto it=clusters.begin(); it!=clusters.end(); ++it){
-        clusters.at(it->first)=colors[a];
-        a++;
-    }
+    map<int,rgb> clusters = get_clusters(segments);
 
     vector<vector<rgb>> output;
 
     //A cada uno le doy el color correspondiente
-    for (a = 0; a < imagen.size(); ++a) {
+    for (int a = 0; a < imagen.size(); ++a) {
         vector<rgb> vacio;
         output.push_back(vacio);
 
@@ -322,18 +297,4 @@ vector<vector<int> > segments_to_image (vector<int> &segments,int h,int w){
     }
 
     return image;
-}
-
-//Menor a 256^3-1
-rgb change_base_to_256(int number){
-    rgb res;
-    int rest=number;
-
-    res.cero=rest%256;
-    rest=(rest)/256;
-    res.uno=rest%256;
-    rest=(rest)/256;
-    res.dos=rest%256;
-
-    return res;
 }
