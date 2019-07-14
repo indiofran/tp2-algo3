@@ -1,0 +1,92 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/graph/graph.h
+vector
+-
+
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/algorithms/algorithms.cpp
+algorithms.h
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/algorithms/algorithms.h
+
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/algorithms/algorithms.h
+../disjoint_set/disjoint_set_array.hpp
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_array.hpp
+../disjoint_set/disjoint_set_tree.hpp
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_tree.hpp
+../disjoint_set/disjoint_set_tree_pc.hpp
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_tree_pc.hpp
+../io/io.h
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/io/io.h
+algorithm
+-
+
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/cli/cli.cpp
+cli.h
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/cli/cli.h
+
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/cli/cli.h
+iostream
+-
+../../segmentation/algorithms/algorithms.h
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/algorithms/algorithms.h
+string
+-
+fstream
+-
+sstream
+-
+map
+-
+cstring
+-
+random
+-
+chrono
+-
+ctime
+-
+
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_array.hpp
+vector
+-
+
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_tree.hpp
+vector
+-
+
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_tree_pc.hpp
+vector
+-
+
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/io/io.cpp
+io.h
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/io/io.h
+
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/io/io.h
+vector
+-
+string
+-
+fstream
+-
+iostream
+-
+map
+-
+../../graph/graph.h
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/graph/graph.h
+../algorithms/algorithms.h
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/algorithms/algorithms.h
+ctime
+-
+
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentationIsMyFault.cpp
+segmentation/cli/cli.h
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/cli/cli.h
+

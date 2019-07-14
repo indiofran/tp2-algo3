@@ -3,17 +3,16 @@
 //
 
 #include <iostream>
-#include "segmentation/segmentation.h"
 #include <string>
 #include <fstream>
 #include <sstream>
 #include <map>
 #include <cstring>
 #include <random>
-//#include "algoritmosP2/DijkstraPQ.h"
-//#include "algoritmosP2/Dijkstra.h"
-//#include "algoritmosP2/bellmanFord.h"
-#include "algoritmosP2/floydWarshall.h"
+#include "min_path/floyd_warshall/floydWarshall.h"
+#include "min_path/dijkstra/Dijkstra.h"
+#include "min_path/dijskstra_pq/DijkstraPQ.h"
+#include "min_path/bellman_ford/bellmanFord.h"
 
 //Ejercicio 2
 
@@ -94,15 +93,15 @@ int main(){
         H[nodeFrom4].push_back(e4);
     }
 
-    //for (int i=0; i < n; i++) {
-    //    DijkstraPQ::dijkstraPQ(H, (i * 61), n);
-    //}
+    for (int i=0; i < n; i++) {
+        DijkstraPQ::dijkstraPQ(H, (i * 61), n);
+    }
     for (int i=0; i < n; i++) {
         Dijkstra::dijkstra(H, (i * 61), n);
     }
-    //for (int i=0; i < n; i++) {
-    //    BellmanFord::bellmanFord(H, (i * 61), n);
-    //}
+    for (int i=0; i < n; i++) {
+        BellmanFord::bellmanFord(H, (i * 61), n);
+    }
     FloydWarshall::floydWarshall(H, n);
 
 

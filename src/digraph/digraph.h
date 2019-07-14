@@ -5,7 +5,7 @@
 #ifndef TP3ALGO3_DIGRAPH_H
 #define TP3ALGO3_DIGRAPH_H
 
-#endif //TP3ALGO3_DIGRAPH_H
+
 
 #include <vector>
 
@@ -24,3 +24,5 @@ struct directed_edge
 };
 
 typedef vector<vector<directed_edge> > digraph;
+
+#endif //TP3ALGO3_DIGRAPH_H

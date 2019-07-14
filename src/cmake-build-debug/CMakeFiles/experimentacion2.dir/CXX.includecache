@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/graph/graph.cpp
+graph.h
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/graph/graph.h
+
+C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/graph/graph.h
+vector
+-
+

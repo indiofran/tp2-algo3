@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tp2algo3"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\tests\;CMake Files\tests\google-test\;CMake Files\tests\google-test\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrTests">
+				<Option output="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/correrTests.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/src"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrTests"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrTests/fast">
+				<Option output="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/correrTests.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/src"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrTests/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llenaloDeSuper">
+				<Option output="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/llenaloDeSuper.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/src"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 llenaloDeSuper"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="llenaloDeSuper/fast">
+				<Option output="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/llenaloDeSuper.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/src"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 llenaloDeSuper/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="experimentacion2">
+				<Option output="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/experimentacion2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/src"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 experimentacion2"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="experimentacion2/fast">
+				<Option output="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/experimentacion2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/src"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 experimentacion2/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="correrValgrind">
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 correrValgrind"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="segmentationIsMyFault">
+				<Option output="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/segmentationIsMyFault.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/src"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 segmentationIsMyFault"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="segmentationIsMyFault/fast">
+				<Option output="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/segmentationIsMyFault.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/src"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 segmentationIsMyFault/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/src"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/src"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/src"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/src"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test"/>
+					<Add directory="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/cmake-build-debug/tests/google-test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/digraph/digraph.cpp">
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+			<Option target="experimentacion2"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/digraph/digraph.h">
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+			<Option target="experimentacion2"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/graph/graph.cpp">
+			<Option target="experimentacion2"/>
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/graph/graph.h">
+			<Option target="experimentacion2"/>
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/llenaloDeSuper.cpp">
+			<Option target="llenaloDeSuper"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/min_path/bellman_ford/bellmanFord.cpp">
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+			<Option target="experimentacion2"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/min_path/bellman_ford/bellmanFord.h">
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+			<Option target="experimentacion2"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/min_path/dijkstra/Dijkstra.cpp">
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+			<Option target="experimentacion2"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/min_path/dijkstra/Dijkstra.h">
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+			<Option target="experimentacion2"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/min_path/dijskstra_pq/DijkstraPQ.cpp">
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+			<Option target="experimentacion2"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/min_path/dijskstra_pq/DijkstraPQ.h">
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+			<Option target="experimentacion2"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/min_path/floyd_warshall/floydWarshall.cpp">
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+			<Option target="experimentacion2"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/min_path/floyd_warshall/floydWarshall.h">
+			<Option target="correrTests"/>
+			<Option target="llenaloDeSuper"/>
+			<Option target="experimentacion2"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/algorithms/algorithms.cpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/algorithms/algorithms.h">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/cli/cli.cpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/cli/cli.h">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_array.cpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_array.hpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_tree.cpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_tree.hpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_tree_pc.cpp">
+			<Option target="experimentacion2"/>
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/disjoint_set/disjoint_set_tree_pc.hpp">
+			<Option target="experimentacion2"/>
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/io/io.cpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentation/io/io.h">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/segmentationIsMyFault.cpp">
+			<Option target="segmentationIsMyFault"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/conjunto-tests.cpp">
+			<Option target="correrTests"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/experimentacion2.cpp">
+			<Option target="experimentacion2"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\google-test\"/>
+		</Unit>
+		<Unit filename="C:/Users/DELL/Documents/Facultad/1er Cuatri 2019/Algo3/Labo/TP2/tp2-algo3/src/tests/google-test/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\tests\google-test\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

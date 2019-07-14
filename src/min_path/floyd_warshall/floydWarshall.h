@@ -4,7 +4,11 @@
 
 #ifndef TP2_ALGO3_FLOYDWARSHALL_H
 #define TP2_ALGO3_FLOYDWARSHALL_H
-#include "DijkstraPQ.h"
+#include "../../digraph/digraph.h"
+#include <iostream>
+#include <vector>
+#include <limits>
+#include <iomanip>
 
 class FloydWarshall {
 public:

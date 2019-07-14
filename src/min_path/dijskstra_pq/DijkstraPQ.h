@@ -4,7 +4,11 @@
 
 #ifndef TP2_ALGO3_DIJKSTRAPQ_H
 #define TP2_ALGO3_DIJKSTRAPQ_H
-#include "Dijkstra.h"
+#include "../../digraph/digraph.h"
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <tuple>
 
 class DijkstraPQ {
 

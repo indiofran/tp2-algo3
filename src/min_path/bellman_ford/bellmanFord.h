@@ -6,7 +6,10 @@
 #define TP2_ALGO3_BELLMANFORD_H
 
 
-#include "../digraph/digraph.h"
+#include "../../digraph/digraph.h"
+#include <iostream>
+#include <vector>
+#include <limits>
 
 class BellmanFord {
 public:

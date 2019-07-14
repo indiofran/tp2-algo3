@@ -24,7 +24,9 @@ add_executable( experimentacion2
                 min_path/dijkstra/Dijkstra.cpp
                 min_path/dijskstra_pq/DijkstraPQ.cpp
                 min_path/floyd_warshall/floydWarshall.cpp
-                digraph/digraph.cpp )
+                segmentation/disjoint_set/disjoint_set_tree_pc.cpp
+                digraph/digraph.cpp
+                graph/graph.cpp)
 
 # Necesitamos asociar los archivos del framework de testing
 target_link_libraries(correrTests gtest gtest_main)

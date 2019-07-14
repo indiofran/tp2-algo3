@@ -4,7 +4,11 @@
 
 #ifndef TP2_ALGO3_DIJKSTRA_H
 #define TP2_ALGO3_DIJKSTRA_H
-#include "bellmanFord.h"
+#include "../../digraph/digraph.h"
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <tuple>
 
 
 class Dijkstra {
